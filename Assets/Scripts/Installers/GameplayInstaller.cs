@@ -11,5 +11,7 @@ public class GameplayInstaller : MonoInstaller
         Container.Bind<EnergyModel>().AsSingle();
         Container.Bind<EnergyController>().AsSingle();
         Container.Bind<MoodController>().AsSingle();
+        Container.Bind<TimeModel>().AsSingle();
+        Container.Bind<TimeController>().FromComponentInHierarchy().AsSingle();
     }
 }

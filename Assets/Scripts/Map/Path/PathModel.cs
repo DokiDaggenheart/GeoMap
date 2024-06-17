@@ -19,6 +19,5 @@ public struct PathSection
     public LandscapeData landscape;
     public Transform start;
     public Transform end;
+    public float length;
 }
-
-

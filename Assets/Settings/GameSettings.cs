@@ -36,6 +36,11 @@ public class GameSettings : MonoBehaviour
     [SerializeField] private int _happyMultiplier;
     [SerializeField] private int _sadMultiplier;
     [SerializeField] private int _neutralMultiplier;
+    [Header("Time")]
+    public int _timeInGameOn;
+    public int _timeInRealLifeOn;
+    public int _timeInGameOff;
+    public int _timeInRealLifeOff;
 
 
 
