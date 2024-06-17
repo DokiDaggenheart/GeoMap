@@ -20,6 +20,7 @@ public struct PathSection
     public Transform start;
     public Transform end;
     public Direction direction;
+    public int length;
 }
 
 public enum Direction { up, down, straight}

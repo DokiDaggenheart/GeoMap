@@ -9,6 +9,7 @@ public class GameSettings : MonoBehaviour
     [Inject] private MovementModel _movementModel;
     [Inject] private MoodModel _moodModel;
     [Inject] private EnergyModel _energyModel;
+    [Inject] private TimeModel _timeModel;
 
     [Header("PathSettings")]
     [SerializeField] private List<PathSection> _pathList;
@@ -30,17 +31,17 @@ public class GameSettings : MonoBehaviour
     [SerializeField] private int _thirdStateCondition;
     [SerializeField] private int _thirdStateVelocity;
     [SerializeField] private int _fourthStateVelocity;
-    [SerializeField] private int _energyDiminution;
+    [SerializeField] private float _energyDiminution;
     [SerializeField] private int _energyAddition;
     [Header("MoodSettings")]
     [SerializeField] private int _happyMultiplier;
     [SerializeField] private int _sadMultiplier;
     [SerializeField] private int _neutralMultiplier;
     [Header("Time")]
-    public int _timeInGameOn;
-    public int _timeInRealLifeOn;
-    public int _timeInGameOff;
-    public int _timeInRealLifeOff;
+    [SerializeField] private int _timeInGameOn;
+    [SerializeField] private int _timeInRealLifeOn;
+    [SerializeField] private int _timeInGameOff;
+    [SerializeField] private int _timeInRealLifeOff;
 
 
 
@@ -65,5 +66,9 @@ public class GameSettings : MonoBehaviour
         _moodModel.neutralMultiplier = _neutralMultiplier;
         _energyModel.energyAddition = _energyAddition;
         _energyModel.energyDiminution = _energyDiminution;
+        _timeModel.timeInGameOn = _timeInGameOn;
+        _timeModel.timeInGameOff = _timeInGameOff;
+        _timeModel.timeInRealLifeOn = _timeInRealLifeOn;
+        _timeModel.timeInRealLifeOff = _timeInRealLifeOff;
     }
 }

@@ -15,5 +15,5 @@ public class EnergyModel
     public int thirdStateVelocity;
     public int fourthStateVelocity;
     public int energyAddition;
-    public int energyDiminution;
+    public float energyDiminution;
 }
