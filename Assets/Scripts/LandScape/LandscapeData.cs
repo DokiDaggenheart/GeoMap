@@ -10,7 +10,10 @@ public class LandscapeData : ScriptableObject
     public List<int> dayTemperature;
     public List<int> nightTemperature;
     public List<string> landscapeLogs;
-    public float landscapeMultiplier;
+    public float landscapeUpMultiplier;
+    public float landscapeStraightMultiplier;
+    public float landscapeDownMultiplier;
+
 }
 
 public enum LandscapeType { plane, hills, foothills, desert, forest, swamp }

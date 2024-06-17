@@ -21,7 +21,7 @@ public class MovementController : MonoBehaviour
             _movementModel.totalVelocity = _movementModel.velocity
                 * _energyController.energyMultiplier()
                 * _moodController.MoodMultiplier()
-                * _pathModel.pathList[i].landscape.landscapeMultiplier;
+                * CurrentLandscapeMultiplier(_pathModel.pathList[i].landscape, _pathModel.pathList[i]);
 
             gameObject.transform.position = Vector2.Lerp(_pathModel.pathList[i].start.position, _pathModel.pathList[i].end.position, _movementModel.progress);
             _movementModel.progress += (_movementModel.totalVelocity / (_pathModel.pathList[i].end.position - _pathModel.pathList[i].start.position).magnitude) * Time.deltaTime;
@@ -45,4 +45,18 @@ public class MovementController : MonoBehaviour
         }
     }
 
+    private float CurrentLandscapeMultiplier(LandscapeData landscape, PathSection pathSection) 
+    {
+        switch (pathSection.direction)
+        {
+            case Direction.down:
+                return landscape.landscapeDownMultiplier;
+            case Direction.up:
+                return landscape.landscapeUpMultiplier;
+            case Direction.straight:
+                return landscape.landscapeStraightMultiplier;
+        }
+        Console.WriteLine("LandcapeMultiplierError");
+        return 0;
+    }
 }

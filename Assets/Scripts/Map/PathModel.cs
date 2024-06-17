@@ -19,6 +19,8 @@ public struct PathSection
     public LandscapeData landscape;
     public Transform start;
     public Transform end;
+    public Direction direction;
 }
 
+public enum Direction { up, down, straight}
 
