@@ -16,3 +16,6 @@ MonoBehaviour:
   dayTemperature: 0f00000014000000
   nightTemperature: 0a00000014000000
   landscapeLogs: []
+  landscapeUpMultiplier: 1
+  landscapeStraightMultiplier: 1
+  landscapeDownMultiplier: 1

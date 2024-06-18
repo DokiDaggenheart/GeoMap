@@ -4899,63 +4899,157 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _pathList:
-  - logs: []
+  - name: 
+    logs:
+    - Sad: "\u041C\u0435\u0440\u0442\u0432\u0430\u044F \u043A\u043E\u0440\u043E\u0432\u0430"
+      Neutral: "\u041C\u0435\u0440\u0442\u0432\u0430\u044F \u043A\u043E\u0440\u043E\u0432\u0430"
+      Happy: "\u041C\u0435\u0440\u0442\u0432\u0430\u044F \u043A\u043E\u0440\u043E\u0432\u0430"
+    - Sad: 
+      Neutral: 
+      Happy: 
+    - Sad: 
+      Neutral: 
+      Happy: 
+    - Sad: 
+      Neutral: 
+      Happy: 
+    - Sad: 
+      Neutral: 
+      Happy: 
+    - Sad: 
+      Neutral: 
+      Happy: 
+    - Sad: 
+      Neutral: 
+      Happy: 
+    - Sad: 
+      Neutral: 
+      Happy: 
+    - Sad: 
+      Neutral: 
+      Happy: 
+    - Sad: 
+      Neutral: 
+      Happy: 
     landscape: {fileID: 11400000, guid: ee8a98e3988a2c64b944a85fb9ecf301, type: 2}
     start: {fileID: 189062422}
     end: {fileID: 429687664}
-  - logs: []
+    direction: 0
+    length: 20
+    firstWeather: 1
+    firstWeatherLength: 0.6
+    secondWeather: 0
+  - name: 
+    logs: []
     landscape: {fileID: 0}
     start: {fileID: 429687664}
     end: {fileID: 944181839}
-  - logs: []
+    direction: 0
+    length: 0
+    firstWeather: 0
+    firstWeatherLength: 0
+    secondWeather: 0
+  - name: 
+    logs: []
     landscape: {fileID: 0}
     start: {fileID: 944181839}
     end: {fileID: 286563712}
-  - logs: []
+    direction: 0
+    length: 0
+    firstWeather: 0
+    firstWeatherLength: 0
+    secondWeather: 0
+  - name: 
+    logs: []
     landscape: {fileID: 0}
     start: {fileID: 286563712}
     end: {fileID: 1583835544}
-  - logs: []
+    direction: 0
+    length: 0
+    firstWeather: 0
+    firstWeatherLength: 0
+    secondWeather: 0
+  - name: 
+    logs: []
     landscape: {fileID: 0}
     start: {fileID: 1583835544}
     end: {fileID: 1008391640}
-  - logs: []
+    direction: 0
+    length: 0
+    firstWeather: 0
+    firstWeatherLength: 0
+    secondWeather: 0
+  - name: 
+    logs: []
     landscape: {fileID: 0}
     start: {fileID: 1008391640}
     end: {fileID: 786270578}
-  - logs: []
+    direction: 0
+    length: 0
+    firstWeather: 0
+    firstWeatherLength: 0
+    secondWeather: 0
+  - name: 
+    logs: []
     landscape: {fileID: 0}
     start: {fileID: 786270578}
     end: {fileID: 1054705959}
-  - logs: []
+    direction: 0
+    length: 0
+    firstWeather: 0
+    firstWeatherLength: 0
+    secondWeather: 0
+  - name: 
+    logs: []
     landscape: {fileID: 0}
     start: {fileID: 1054705959}
     end: {fileID: 1786976163}
-  - logs: []
+    direction: 0
+    length: 0
+    firstWeather: 0
+    firstWeatherLength: 0
+    secondWeather: 0
+  - name: 
+    logs: []
     landscape: {fileID: 0}
     start: {fileID: 1786976163}
     end: {fileID: 1218041599}
-  - logs: []
+    direction: 0
+    length: 0
+    firstWeather: 0
+    firstWeatherLength: 0
+    secondWeather: 0
+  - name: 
+    logs: []
     landscape: {fileID: 0}
     start: {fileID: 1218041599}
     end: {fileID: 1502702690}
+    direction: 0
+    length: 0
+    firstWeather: 0
+    firstWeatherLength: 0
+    secondWeather: 0
   _spacingLength: 0.2
   _dotPrefab: {fileID: 1632984216819298127, guid: cadb4fad2478563499e8c483132fec12, type: 3}
   _maxEnergy: 100
-  _velocity: 0.5
+  _velocity: 20
   _startRidingEnergy: 95
   _firstStateCondition: 80
-  _firstStateVelocity: 200
+  _firstStateVelocity: 100
   _secondStateCondition: 60
   _secondStateVelocity: 100
   _thirdStateCondition: 40
   _thirdStateVelocity: 90
   _fourthStateVelocity: 80
-  _energyDiminution: 5
+  _energyDiminution: 0.5
   _energyAddition: 20
   _happyMultiplier: 150
   _sadMultiplier: 80
   _neutralMultiplier: 100
+  _timeInGameOn: 3
+  _timeInRealLifeOn: 1
+  _timeInGameOff: 1
+  _timeInRealLifeOff: 3
 --- !u!4 &1449076302
 Transform:
   m_ObjectHideFlags: 0
@@ -5962,6 +6056,8 @@ GameObject:
   - component: {fileID: 1849280219}
   - component: {fileID: 1849280221}
   - component: {fileID: 1849280220}
+  - component: {fileID: 1849280222}
+  - component: {fileID: 1849280223}
   m_Layer: 5
   m_Name: TimeText
   m_TagString: Untagged
@@ -6085,6 +6181,32 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1849280218}
   m_CullTransparentMesh: 1
+--- !u!114 &1849280222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1849280218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5dad9ab7f9b0bf74791870882495b1f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timerText: {fileID: 1849280220}
+--- !u!114 &1849280223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1849280218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d06993bc9af84046bf891ed00c3ed3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeScale: 0
 --- !u!1 &1878389799
 GameObject:
   m_ObjectHideFlags: 0
