@@ -11,6 +11,8 @@ public class MovementController : MonoBehaviour
     [Inject] private EnergyController _energyController;
     [Inject] private MoodController _moodController;
     [Inject] private TimeController _timeController;
+
+    private float time;
     private int i = 0;
     private void Update()
     {
@@ -20,13 +22,15 @@ public class MovementController : MonoBehaviour
         {
             GoToNextPoint();
             _movementModel.totalVelocity = _movementModel.velocity
-                * _energyController.energyMultiplier()/*
-                * _moodController.MoodMultiplier()*/
+                * _energyController.energyMultiplier()
                 * CurrentLandscapeMultiplier(_pathModel.pathList[i].landscape, _pathModel.pathList[i]);
 
             gameObject.transform.position = Vector2.Lerp(_pathModel.pathList[i].start.position, _pathModel.pathList[i].end.position, _movementModel.progress);
             _movementModel.progress += (_movementModel.totalVelocity / _pathModel.pathList[i].length) * (Time.deltaTime/3600) * _timeController.timeScale;
-            _energyModel.energy -= _energyModel.energyDiminution * (Time.deltaTime/60)* _timeController.timeScale;
+
+            time += Time.deltaTime;
+            if(time >= (60/_timeController.timeScale))
+                _energyModel.energy -= _energyModel.energyDiminution *_moodController.MoodMultiplier();
         }
 
         if (!_movementModel.isRiding)

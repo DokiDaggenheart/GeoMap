@@ -8,9 +8,7 @@ using Zenject;
 public class TimeView : MonoBehaviour
 {
     [Inject] TimeController _timeController;
-
-    private int gameHours = 0;
-    private int gameMinutes = 0;
+    [Inject] TimeModel _timeModel;
 
     public TextMeshProUGUI timerText;
 
@@ -18,21 +16,21 @@ public class TimeView : MonoBehaviour
     {
         StartCoroutine(UpdateGameTime());
     }
-
     IEnumerator UpdateGameTime()
     {
         while (true)
         {
             yield return new WaitForSeconds(60f / _timeController.timeScale);
 
-            gameMinutes++;
-            if (gameMinutes >= 60)
+            _timeModel.gameMinutes++;
+            if (_timeModel.gameMinutes >= 60)
             {
-                gameMinutes = 0;
-                gameHours++;
-                if (gameHours >= 24)
+                _timeModel.gameMinutes = 0;
+                _timeModel.gameHours++;
+                if (_timeModel.gameHours >= 24)
                 {
-                    gameHours = 0;
+                    _timeModel.gameHours = 0;
+                    _timeModel.gameDays++;
                 }
             }
 
@@ -42,6 +40,6 @@ public class TimeView : MonoBehaviour
 
     void UpdateTimerText()
     {
-        timerText.text = string.Format("{0:00}:{1:00}", gameHours, gameMinutes);
+        timerText.text = string.Format("{0:00}:{1:00}", _timeModel.gameHours, _timeModel.gameMinutes);
     }
 }

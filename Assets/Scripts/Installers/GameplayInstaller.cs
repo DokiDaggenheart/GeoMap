@@ -13,5 +13,9 @@ public class GameplayInstaller : MonoInstaller
         Container.Bind<MoodController>().AsSingle();
         Container.Bind<TimeModel>().AsSingle();
         Container.Bind<TimeController>().FromComponentInHierarchy().AsSingle();
+        Container.Bind<TemperatureModel>().AsSingle();
+        Container.Bind<TemperatureController>().AsSingle();
+        Container.Bind<WeatherController>().AsSingle();
+        Container.Bind<WeatherModel>().AsSingle();
     }
 }

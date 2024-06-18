@@ -36,5 +36,4 @@ public struct Log
     public string Happy;
 }
 public enum Direction { up, down, straight}
-public enum Weather {rainy, sunny, cloudy}
 
