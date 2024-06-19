@@ -13,7 +13,9 @@ MonoBehaviour:
   m_Name: Foothills
   m_EditorClassIdentifier: 
   landscapeType: 0
-  dayTemperature: 
-  nightTemperature: 
+  dayTemperature: 000000000a000000
+  nightTemperature: fbffffff05000000
   landscapeLogs: []
-  landscapeMultiplier: 0
+  landscapeUpMultiplier: 0.6
+  landscapeStraightMultiplier: 0.8
+  landscapeDownMultiplier: 1.4

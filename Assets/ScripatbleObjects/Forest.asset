@@ -13,7 +13,9 @@ MonoBehaviour:
   m_Name: Forest
   m_EditorClassIdentifier: 
   landscapeType: 0
-  dayTemperature: 
-  nightTemperature: 
+  dayTemperature: 0a0000000f000000
+  nightTemperature: 0a0000000f000000
   landscapeLogs: []
-  landscapeMultiplier: 0
+  landscapeUpMultiplier: 0.9
+  landscapeStraightMultiplier: 1
+  landscapeDownMultiplier: 1.1

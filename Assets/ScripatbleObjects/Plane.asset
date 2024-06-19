@@ -13,6 +13,9 @@ MonoBehaviour:
   m_Name: Plane
   m_EditorClassIdentifier: 
   landscapeType: 0
-  dayTemperature: 0f00000014000000
-  nightTemperature: 0a00000014000000
+  dayTemperature: 0f00000019000000
+  nightTemperature: 000000000a000000
   landscapeLogs: []
+  landscapeUpMultiplier: 1.1
+  landscapeStraightMultiplier: 1
+  landscapeDownMultiplier: 0.9

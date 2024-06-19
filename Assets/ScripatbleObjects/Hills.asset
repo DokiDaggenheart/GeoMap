@@ -13,7 +13,9 @@ MonoBehaviour:
   m_Name: Hills
   m_EditorClassIdentifier: 
   landscapeType: 0
-  dayTemperature: 
-  nightTemperature: 
+  dayTemperature: fbffffff05000000
+  nightTemperature: f6ffffff00000000
   landscapeLogs: []
-  landscapeMultiplier: 0
+  landscapeUpMultiplier: 0.5
+  landscapeStraightMultiplier: 0.7
+  landscapeDownMultiplier: 1.6
