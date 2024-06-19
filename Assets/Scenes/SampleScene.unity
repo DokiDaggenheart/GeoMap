@@ -5034,22 +5034,34 @@ MonoBehaviour:
   _maxEnergy: 100
   _velocity: 20
   _startRidingEnergy: 95
-  _firstStateCondition: 80
-  _firstStateVelocity: 100
-  _secondStateCondition: 60
+  _firstStateCondition: 75
+  _firstStateVelocity: 130
+  _secondStateCondition: 50
   _secondStateVelocity: 100
-  _thirdStateCondition: 40
-  _thirdStateVelocity: 90
+  _thirdStateCondition: 25
+  _thirdStateVelocity: 120
   _fourthStateVelocity: 80
   _energyDiminution: 0.5
   _energyAddition: 20
-  _happyMultiplier: 150
-  _sadMultiplier: 80
+  _happyMultiplier: 80
+  _sadMultiplier: 120
   _neutralMultiplier: 100
+  _sadCondition: 33
+  _neutralCondition: 66
   _timeInGameOn: 3
   _timeInRealLifeOn: 1
   _timeInGameOff: 1
   _timeInRealLifeOff: 3
+  _rainTemperatureCoef: -0.4
+  _sunTemperatureCoef: 0.4
+  _cloudTemperatureCoef: 0
+  _rainMoodCoef: -0.2
+  _sunMoodCoef: 0.2
+  _cloudMoodCoef: -0.2
+  _nightCoefficient: -0.8
+  _morningCoefficient: 0.2
+  _dayCoefficient: 0.3
+  _eveningCoefficient: -0.5
 --- !u!4 &1449076302
 Transform:
   m_ObjectHideFlags: 0
