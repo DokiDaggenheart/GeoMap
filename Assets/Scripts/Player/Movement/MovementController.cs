@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 using Zenject;
@@ -11,26 +12,22 @@ public class MovementController : MonoBehaviour
     [Inject] private EnergyController _energyController;
     [Inject] private MoodController _moodController;
     [Inject] private TimeController _timeController;
-
-    private float time;
     private int i = 0;
     private void Update()
     {
         _movementModel.isRiding = _energyController.CheckEnergy();
-        Debug.Log(_movementModel.isRiding + "Speed:" + _movementModel.totalVelocity);
+        Debug.Log(_movementModel.isRiding);
         if (_movementModel.isRiding)
         {
             GoToNextPoint();
             _movementModel.totalVelocity = _movementModel.velocity
                 * _energyController.energyMultiplier()
+                * _moodController.MoodMultiplier()
                 * CurrentLandscapeMultiplier(_pathModel.pathList[i].landscape, _pathModel.pathList[i]);
 
             gameObject.transform.position = Vector2.Lerp(_pathModel.pathList[i].start.position, _pathModel.pathList[i].end.position, _movementModel.progress);
-            _movementModel.progress += (_movementModel.totalVelocity / _pathModel.pathList[i].length) * (Time.deltaTime/3600) * _timeController.timeScale;
-
-            time += Time.deltaTime;
-            if(time >= (60/_timeController.timeScale))
-                _energyModel.energy -= _energyModel.energyDiminution *_moodController.MoodMultiplier();
+            _movementModel.progress += (_movementModel.totalVelocity / (_pathModel.pathList[i].end.position - _pathModel.pathList[i].start.position).magnitude) * Time.deltaTime;
+            _energyModel.energy -= _energyModel.energyDiminution * Time.deltaTime;
         }
 
         if (!_movementModel.isRiding)
@@ -49,7 +46,7 @@ public class MovementController : MonoBehaviour
             _movementModel.progress = 0;
         }
     }
-    private float CurrentLandscapeMultiplier(LandscapeData landscape, PathSection pathSection)
+    public float CurrentLandscapeMultiplier(LandscapeData landscape, PathSection pathSection)
     {
         switch (pathSection.direction)
         {
@@ -62,5 +59,13 @@ public class MovementController : MonoBehaviour
         }
         Console.WriteLine("LandcapeMultiplierError");
         return 0;
+    }
+
+    IEnumerator Rest(float restTime, float energyRecovery)
+    {
+        _movementModel.isRiding = false;
+        _energyModel.energy = (energyRecovery / restTime) / _timeController.timeScale;
+        yield return new WaitForSeconds((restTime * 60)/ _timeController.timeScale);
+        _movementModel.isRiding = true;
     }
 }
