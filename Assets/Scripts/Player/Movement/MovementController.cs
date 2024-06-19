@@ -1,5 +1,4 @@
 using System;
-using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 using Zenject;
@@ -45,7 +44,8 @@ public class MovementController : MonoBehaviour
             _movementModel.progress = 0;
         }
     }
-    public float CurrentLandscapeMultiplier(LandscapeData landscape, PathSection pathSection)
+
+    private float CurrentLandscapeMultiplier(LandscapeData landscape, PathSection pathSection) 
     {
         switch (pathSection.direction)
         {
@@ -58,13 +58,5 @@ public class MovementController : MonoBehaviour
         }
         Console.WriteLine("LandcapeMultiplierError");
         return 0;
-    }
-
-    IEnumerator Rest(float restTime, float energyRecovery)
-    {
-        _movementModel.isRiding = false;
-        _energyModel.energy = (energyRecovery / restTime) / _timeController.timeScale;
-        yield return new WaitForSeconds((restTime * 60)/ _timeController.timeScale);
-        _movementModel.isRiding = true;
     }
 }
