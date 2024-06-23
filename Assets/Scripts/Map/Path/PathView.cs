@@ -9,10 +9,8 @@ public class PathView : MonoBehaviour
 
     private void Start()
     {
-        Debug.Log(_pathModel.pathList.Count);
         for (int i = 0; i < _pathModel.pathList.Count; i++)
         {
-            Debug.Log(i);
             DrawDottedLine(_pathModel.pathList[i].start, _pathModel.pathList[i].end, _pathModel.spacingLength, _pathModel.dotPrefab);
         }
     }

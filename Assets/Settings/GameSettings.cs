@@ -10,6 +10,7 @@ public class GameSettings : MonoBehaviour
     [Inject] private EnergyModel _energyModel;
     [Inject] private TimeModel _timeModel;
     [Inject] private WeatherModel _weatherModel;
+    [Inject] private TemperatureModel _temperatureModel;
 
     [Header("PathSettings")]
     [SerializeField] private List<PathSection> _pathList;
@@ -63,6 +64,16 @@ public class GameSettings : MonoBehaviour
     [SerializeField] private float _dayCoefficient;
     [SerializeField] private float _eveningCoefficient;
 
+    [Header("TemperatureSettings")]
+    [SerializeField] private TemperatureState _temperatureState;
+    [SerializeField] private float _currentTemperature;
+    [SerializeField] private float _coldMultiplier;
+    [SerializeField] private float _coldCondition;
+    [SerializeField] private float _normalMultiplier;
+    [SerializeField] private float _normalCondition;
+    [SerializeField] private float _hotMultiplier;
+    [SerializeField] private float _minTemperature;
+    [SerializeField] private float _maxTemperature;
     private void Awake()
     {
         // PathModel settings
@@ -109,5 +120,16 @@ public class GameSettings : MonoBehaviour
         _weatherModel.rainMoodCoef = _rainMoodCoef;
         _weatherModel.sunMoodCoef = _sunMoodCoef;
         _weatherModel.cloudMoodCoef = _cloudMoodCoef;
+
+        // TemperatureModel settings
+        _temperatureModel.temperatureState = _temperatureState;
+        _temperatureModel.currentTemperature = _currentTemperature;
+        _temperatureModel.coldMultiplier = _coldMultiplier;
+        _temperatureModel.coldCondition = _coldCondition;
+        _temperatureModel.normalMultiplier = _normalMultiplier;
+        _temperatureModel.normalCondition = _normalCondition;
+        _temperatureModel.hotMultiplier = _hotMultiplier;
+        _temperatureModel.minTemperature = _minTemperature;
+        _temperatureModel.maxTemperature = _maxTemperature;
     }
 }

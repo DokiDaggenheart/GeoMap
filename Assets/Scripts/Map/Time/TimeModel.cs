@@ -49,6 +49,11 @@ public class TimeModel
             return TimeOfDay.Night;
         }
     }
+
+    public string CurrentTime()
+    {
+        return string.Format("{0:00}:{1:00}", gameHours, gameMinutes);
+    }
 }
 public enum TimeOfDay
 {

@@ -7,7 +7,7 @@ public class MoodModel
     public MoodState moodState;
     [Range(0,100)]
     
-    public float currentMood;
+    public float currentMood = 100;
     public int sadMultiplier;
     public int sadCondition;
     public int neutralMultiplier;

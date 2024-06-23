@@ -3,17 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 using Zenject;
 
-public class MoodController : ITickable
+public class MoodController : MonoBehaviour
 {
-    [Inject] TemperatureController _temperatureController;
-    [Inject] MoodModel _moodModel;
+    [Inject] private TemperatureController _temperatureController;
+    [Inject] private MoodModel _moodModel;
     [Inject] private WeatherController _weatherController;
+    [Inject] private TimeController _timeController;
     private float timer = 0f;
-    private const float tickInterval = 1f;
-    void ITickable.Tick()
+
+    private void Update()
     {
         timer += Time.deltaTime;
-        if (timer >= tickInterval)
+        if (timer >= 60.0f / _timeController.timeScale)
         {
             _moodModel.currentMood += _temperatureController.TemperatureInfluence();
             _moodModel.currentMood += _weatherController.WeatherMoodCoefficient();
@@ -25,6 +26,7 @@ public class MoodController : ITickable
 
     public float MoodMultiplier()
     {
+        _moodModel.UpdateMoodState();
         float multiplier = 100;
         switch (_moodModel.moodState)
         {
@@ -38,7 +40,8 @@ public class MoodController : ITickable
                 multiplier = _moodModel.neutralMultiplier;
                 break;
         }
-        return multiplier / 100;
+        multiplier = multiplier / 100;
+        return multiplier;
     }
 
 

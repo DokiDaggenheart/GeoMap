@@ -7,8 +7,7 @@ using UnityEngine;
 public class LandscapeData : ScriptableObject
 {
     public LandscapeType landscapeType;
-    public List<int> dayTemperature;
-    public List<int> nightTemperature;
+    public float temperatureCoefficient;
     public List<string> landscapeLogs;
     public float landscapeUpMultiplier;
     public float landscapeStraightMultiplier;

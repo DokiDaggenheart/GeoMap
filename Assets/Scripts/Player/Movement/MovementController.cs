@@ -12,22 +12,33 @@ public class MovementController : MonoBehaviour
     [Inject] private EnergyController _energyController;
     [Inject] private MoodController _moodController;
     [Inject] private TimeController _timeController;
-    private int i = 0;
+    [Inject] private LogSystem _logSystem;
+    [Inject] private WeatherModel _weatherModel;
+
+    private void Start()
+    {
+        _logSystem.SetLogList(_pathModel.pathList[pathSectionIndex]);
+    }
+    public int pathSectionIndex = 0;
     private void Update()
     {
         _movementModel.isRiding = _energyController.CheckEnergy();
-        Debug.Log(_movementModel.isRiding);
         if (_movementModel.isRiding)
         {
+            Debug.Log("total velocity is " + _movementModel.totalVelocity);
             GoToNextPoint();
             _movementModel.totalVelocity = _movementModel.velocity
                 * _energyController.energyMultiplier()
-                * _moodController.MoodMultiplier()
-                * CurrentLandscapeMultiplier(_pathModel.pathList[i].landscape, _pathModel.pathList[i]);
+                * CurrentLandscapeMultiplier(_pathModel.pathList[pathSectionIndex].landscape, _pathModel.pathList[pathSectionIndex], _movementModel.progress);
 
-            gameObject.transform.position = Vector2.Lerp(_pathModel.pathList[i].start.position, _pathModel.pathList[i].end.position, _movementModel.progress);
-            _movementModel.progress += (_movementModel.totalVelocity / (_pathModel.pathList[i].end.position - _pathModel.pathList[i].start.position).magnitude) * Time.deltaTime;
-            _energyModel.energy -= _energyModel.energyDiminution * Time.deltaTime;
+            gameObject.transform.position = Vector2.Lerp(_pathModel.pathList[pathSectionIndex].start.position, _pathModel.pathList[pathSectionIndex].end.position, _movementModel.progress);
+            _movementModel.progress += (_movementModel.totalVelocity / _pathModel.pathList[pathSectionIndex].length) * (Time.deltaTime*_timeController.timeScale / 3600);
+            _energyModel.energy -= _energyModel.energyDiminution * _moodController.MoodMultiplier() * (Time.deltaTime*_timeController.timeScale / 60);
+
+            if (_movementModel.progress < _pathModel.pathList[pathSectionIndex].firstWeatherLength)
+                _weatherModel.ChangeWeather(_pathModel.pathList[pathSectionIndex].firstWeather);
+            else
+                _weatherModel.ChangeWeather(_pathModel.pathList[pathSectionIndex].secondWeather);
         }
 
         if (!_movementModel.isRiding)
@@ -42,13 +53,19 @@ public class MovementController : MonoBehaviour
         if(_movementModel.progress >= 0.99)
         {
             Debug.Log("GoNext");
-            i += 1;
+            pathSectionIndex += 1;
             _movementModel.progress = 0;
+            _logSystem.SetLogList(_pathModel.pathList[pathSectionIndex]);
         }
     }
-    public float CurrentLandscapeMultiplier(LandscapeData landscape, PathSection pathSection)
+    public float CurrentLandscapeMultiplier(LandscapeData landscape, PathSection pathSection, float progress)
     {
-        switch (pathSection.direction)
+        Direction currentDirection;
+        if (progress < pathSection.firstDirectionLength)
+            currentDirection = pathSection.firstDirection;
+        else
+            currentDirection = pathSection.secondDirection;
+        switch (currentDirection)
         {
             case Direction.down:
                 return landscape.landscapeDownMultiplier;
@@ -67,5 +84,10 @@ public class MovementController : MonoBehaviour
         _energyModel.energy = (energyRecovery / restTime) / _timeController.timeScale;
         yield return new WaitForSeconds((restTime * 60)/ _timeController.timeScale);
         _movementModel.isRiding = true;
+    }
+
+    public PathSection GetCurrentPathSection()
+    {
+        return _pathModel.pathList[pathSectionIndex];
     }
 }

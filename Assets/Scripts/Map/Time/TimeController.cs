@@ -12,7 +12,6 @@ public class TimeController : MonoBehaviour
     {
         ChangeTimeScale();
     }
-
     private void ChangeTimeScale()
     {
         timeScale = RealToGameTimeScale();

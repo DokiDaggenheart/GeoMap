@@ -9,19 +9,14 @@ public class TimeView : MonoBehaviour
 {
     [Inject] TimeController _timeController;
     [Inject] TimeModel _timeModel;
-
+    private float time;
     public TextMeshProUGUI timerText;
 
-    private void Start()
+    private void Update()
     {
-        StartCoroutine(UpdateGameTime());
-    }
-    IEnumerator UpdateGameTime()
-    {
-        while (true)
+        time += Time.deltaTime * _timeController.timeScale;
+        if(time >= 60)
         {
-            yield return new WaitForSeconds(60f / _timeController.timeScale);
-
             _timeModel.gameMinutes++;
             if (_timeModel.gameMinutes >= 60)
             {
@@ -33,13 +28,12 @@ public class TimeView : MonoBehaviour
                     _timeModel.gameDays++;
                 }
             }
-
             UpdateTimerText();
+            time = 0;
         }
     }
-
     void UpdateTimerText()
     {
-        timerText.text = string.Format("{0:00}:{1:00}", _timeModel.gameHours, _timeModel.gameMinutes);
+        timerText.text = _timeModel.CurrentTime();
     }
 }

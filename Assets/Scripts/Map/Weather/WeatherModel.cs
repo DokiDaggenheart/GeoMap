@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WeatherModel : MonoBehaviour
+public class WeatherModel
 {
     public Weather weatherState;
     public float rainTemperatureCoef;

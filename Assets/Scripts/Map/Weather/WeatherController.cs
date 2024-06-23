@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Zenject;
 
-public class WeatherController : MonoBehaviour
+public class WeatherController
 {
     [Inject] private WeatherModel _weatherModel;
 

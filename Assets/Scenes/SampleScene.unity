@@ -664,6 +664,7 @@ GameObject:
   - component: {fileID: 186919714}
   - component: {fileID: 186919716}
   - component: {fileID: 186919715}
+  - component: {fileID: 186919717}
   m_Layer: 5
   m_Name: 'WeatherRectangle '
   m_TagString: Untagged
@@ -730,6 +731,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 186919713}
   m_CullTransparentMesh: 1
+--- !u!114 &186919717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 186919713}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8702552cb65dc0448b1b5c2dbeffbee9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &189062421
 GameObject:
   m_ObjectHideFlags: 0
@@ -1943,6 +1956,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6569de39339b5c8439f2474b7291728a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pathSectionIndex: 0
 --- !u!4 &457095622
 Transform:
   m_ObjectHideFlags: 0
@@ -4144,6 +4158,7 @@ GameObject:
   - component: {fileID: 1228924872}
   - component: {fileID: 1228924871}
   - component: {fileID: 1228924874}
+  - component: {fileID: 1228924875}
   m_Layer: 5
   m_Name: LogButton
   m_TagString: Untagged
@@ -4278,6 +4293,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   window: {fileID: 1818916766}
+--- !u!114 &1228924875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1228924869}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b8a4926f05ca8c41b9fa145d64c4061, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tolerance: 0.01
 --- !u!1 &1238569864
 GameObject:
   m_ObjectHideFlags: 0
@@ -4901,36 +4929,48 @@ MonoBehaviour:
   _pathList:
   - name: 
     logs:
-    - Sad: "\u041C\u0435\u0440\u0442\u0432\u0430\u044F \u043A\u043E\u0440\u043E\u0432\u0430"
+    - isImporntant: 0
+      Sad: "\u041C\u0435\u0440\u0442\u0432\u0430\u044F \u043A\u043E\u0440\u043E\u0432\u0430"
       Neutral: "\u041C\u0435\u0440\u0442\u0432\u0430\u044F \u043A\u043E\u0440\u043E\u0432\u0430"
       Happy: "\u041C\u0435\u0440\u0442\u0432\u0430\u044F \u043A\u043E\u0440\u043E\u0432\u0430"
-    - Sad: 
+    - isImporntant: 0
+      Sad: 2
+      Neutral: 2
+      Happy: 2
+    - isImporntant: 0
+      Sad: "\u043A\u0430\u043F\u0435\u0446 3"
       Neutral: 
-      Happy: 
-    - Sad: 
+      Happy: "\u043A\u0430\u043F\u0435\u0446 3"
+    - isImporntant: 0
+      Sad: 
       Neutral: 
-      Happy: 
-    - Sad: 
+      Happy: "\u0443\u0436\u0435 4"
+    - isImporntant: 0
+      Sad: 
       Neutral: 
-      Happy: 
-    - Sad: 
+      Happy: "\u0434\u0430\u043B\u044C\u0448\u0435 \u043B\u0435\u0433\u0447\u0435
+        5"
+    - isImporntant: 0
+      Sad: 
       Neutral: 
-      Happy: 
-    - Sad: 
+      Happy: "\u0443\u0436\u0435 \u0442\u043E\u0447\u043D\u043E \u0440\u0430\u0431\u043E\u0430\u0442\u0435\u0442"
+    - isImporntant: 0
+      Sad: 
       Neutral: 
-      Happy: 
-    - Sad: 
+      Happy: "\u0436\u0434\u0435\u043C \u043F\u043E\u0441\u043B\u0435\u0434\u043D\u0438\u0439"
+    - isImporntant: 0
+      Sad: 
       Neutral: 
-      Happy: 
-    - Sad: 
+      Happy: "\u043F\u043E\u0447\u0442\u0438, 8"
+    - isImporntant: 0
+      Sad: 
       Neutral: 
-      Happy: 
-    - Sad: 
+      Happy: "\u043F\u0440\u044F\u043C\u0430\u044F, 9"
+    - isImporntant: 0
+      Sad: 
       Neutral: 
-      Happy: 
-    - Sad: 
-      Neutral: 
-      Happy: 
+      Happy: "\u0432\u0441\u0435 \u0440\u0430\u0431\u043E\u0442\u0430\u0435\u0442,
+        10"
     landscape: {fileID: 11400000, guid: ee8a98e3988a2c64b944a85fb9ecf301, type: 2}
     start: {fileID: 189062422}
     end: {fileID: 429687664}
@@ -5046,10 +5086,22 @@ MonoBehaviour:
   _happyMultiplier: 150
   _sadMultiplier: 80
   _neutralMultiplier: 100
-  _timeInGameOn: 3
+  _sadCondition: 0
+  _neutralCondition: 0
+  _timeInGameOn: 1
   _timeInRealLifeOn: 1
   _timeInGameOff: 1
   _timeInRealLifeOff: 3
+  _rainTemperatureCoef: 0
+  _sunTemperatureCoef: 0
+  _cloudTemperatureCoef: 0
+  _rainMoodCoef: 0
+  _sunMoodCoef: 0
+  _cloudMoodCoef: 0
+  _nightCoefficient: 0
+  _morningCoefficient: 0
+  _dayCoefficient: 0
+  _eveningCoefficient: 0
 --- !u!4 &1449076302
 Transform:
   m_ObjectHideFlags: 0

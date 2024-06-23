@@ -7,15 +7,17 @@ public class GameplayInstaller : MonoInstaller
     {
         Container.Bind<PathModel>().AsSingle();
         Container.Bind<MovementModel>().AsSingle();
+        Container.Bind<MovementController>().FromComponentInHierarchy().AsSingle();
         Container.Bind<MoodModel>().AsSingle();
         Container.Bind<EnergyModel>().AsSingle();
         Container.Bind<EnergyController>().AsSingle();
-        Container.Bind<MoodController>().AsSingle();
+        Container.Bind<MoodController>().FromComponentInHierarchy().AsSingle();
         Container.Bind<TimeModel>().AsSingle();
         Container.Bind<TimeController>().FromComponentInHierarchy().AsSingle();
         Container.Bind<TemperatureModel>().AsSingle();
-        Container.Bind<TemperatureController>().AsSingle();
+        Container.Bind<TemperatureController>().FromComponentInHierarchy().AsSingle();
         Container.Bind<WeatherController>().AsSingle();
         Container.Bind<WeatherModel>().AsSingle();
+        Container.Bind<LogSystem>().FromComponentInHierarchy().AsSingle();
     }
 }

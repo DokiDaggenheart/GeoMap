@@ -9,14 +9,17 @@ public class TemperatureController : MonoBehaviour
     [Inject] TemperatureModel _temperatureModel;
     [Inject] TimeController _timeController;
     [Inject] WeatherController _weatherController;
+    [Inject] MovementController _movementController;
 
     private void Update()
     {
-        time += Time.deltaTime / _timeController.timeScale;
-        if(time >= 60)
+        time += Time.deltaTime * _timeController.timeScale;
+        if (time >= 60)
         {
-            AdjustTemperature(_weatherController.WeatherTemperatureCoefficient());
-            AdjustTemperature(_timeController.GetCurrentTimeOfDayCoefficient());
+
+            AdjustTemperature(_weatherController.WeatherTemperatureCoefficient() * GetCurrentLandscapeCoefficient());
+            AdjustTemperature(_timeController.GetCurrentTimeOfDayCoefficient() * GetCurrentLandscapeCoefficient());
+            _temperatureModel.currentTemperature = Mathf.Clamp(_temperatureModel.currentTemperature, -5, 40);
             time = 0.0f;
         }
     }
@@ -39,5 +42,10 @@ public class TemperatureController : MonoBehaviour
                 return _temperatureModel.hotMultiplier;
         }
         return 0;
+    }
+
+    private float GetCurrentLandscapeCoefficient()
+    {
+        return _movementController.GetCurrentPathSection().landscape.temperatureCoefficient;
     }
 }

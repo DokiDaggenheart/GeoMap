@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TemperatureModel : MonoBehaviour
+public class TemperatureModel
 {
     public TemperatureState temperatureState;
     public float currentTemperature;
@@ -11,7 +11,6 @@ public class TemperatureModel : MonoBehaviour
     public float normalMultiplier;
     public float normalCondition;
     public float hotMultiplier;
-    public float hotCondition;
     public float minTemperature;
     public float maxTemperature;
 
