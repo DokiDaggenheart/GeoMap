@@ -46,6 +46,6 @@ public class TemperatureController : MonoBehaviour
 
     private float GetCurrentLandscapeCoefficient()
     {
-        return _movementController.GetCurrentPathSection().landscape.temperatureCoefficient;
+        return _movementController.GetCurrentLandscape().temperatureCoefficient;
     }
 }

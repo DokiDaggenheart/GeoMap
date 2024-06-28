@@ -16,7 +16,10 @@ public struct PathSection
 {
     public string name;
     public List<Log> logs;
-    public LandscapeData landscape;
+    public LandscapeData firstLandscape;
+    [Range(0.0f, 1.0f)]
+    public float firstLandscapeLength;
+    public LandscapeData secondLandscape;
     public Transform start;
     public Transform end;
     public int length;

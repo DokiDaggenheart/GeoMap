@@ -14,6 +14,7 @@ public class MovementController : MonoBehaviour
     [Inject] private TimeController _timeController;
     [Inject] private LogSystem _logSystem;
     [Inject] private WeatherModel _weatherModel;
+    [Inject] private TemperatureModel _temperatureModel;
 
     private void Start()
     {
@@ -27,9 +28,10 @@ public class MovementController : MonoBehaviour
         {
             Debug.Log("total velocity is " + _movementModel.totalVelocity);
             GoToNextPoint();
+
             _movementModel.totalVelocity = _movementModel.velocity
                 * _energyController.energyMultiplier()
-                * CurrentLandscapeMultiplier(_pathModel.pathList[pathSectionIndex].landscape, _pathModel.pathList[pathSectionIndex], _movementModel.progress);
+                * CurrentLandscapeMultiplier(GetCurrentLandscape(), _pathModel.pathList[pathSectionIndex], _movementModel.progress);
 
             gameObject.transform.position = Vector2.Lerp(_pathModel.pathList[pathSectionIndex].start.position, _pathModel.pathList[pathSectionIndex].end.position, _movementModel.progress);
             _movementModel.progress += (_movementModel.totalVelocity / _pathModel.pathList[pathSectionIndex].length) * (Time.deltaTime*_timeController.timeScale / 3600);
@@ -85,9 +87,30 @@ public class MovementController : MonoBehaviour
         yield return new WaitForSeconds((restTime * 60)/ _timeController.timeScale);
         _movementModel.isRiding = true;
     }
+    public LandscapeData GetCurrentLandscape()
+    {
+        LandscapeData landscape;
+        if (_movementModel.progress < _pathModel.pathList[pathSectionIndex].firstLandscapeLength)
+            landscape = _pathModel.pathList[pathSectionIndex].firstLandscape;
+        else
+            landscape = _pathModel.pathList[pathSectionIndex].secondLandscape;
 
+        return landscape;
+    }
     public PathSection GetCurrentPathSection()
     {
         return _pathModel.pathList[pathSectionIndex];
+    }
+
+    public string GetCurrentSpeed()
+    {
+        string currentSpeed = _movementModel.totalVelocity + " km/h";
+        return currentSpeed;
+    }
+
+    public string GetCurrentTemperature()
+    {
+        string currentTemperaure = _temperatureModel.currentTemperature + " °C";
+        return currentTemperaure;
     }
 }
