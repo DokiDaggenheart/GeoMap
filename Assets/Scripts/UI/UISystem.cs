@@ -16,5 +16,6 @@ public class UISystem : MonoBehaviour
     private void Update()
     {
         speedText.text = _movementController.GetCurrentSpeed();
+
     }
 }
