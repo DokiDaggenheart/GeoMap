@@ -33,6 +33,8 @@ namespace SceneSystem
     public class ActData
     {
         public string name;
+        public string firstCharacterName;
+        public string secondCharacterName;
         public List<SceneData> scenes = new List<SceneData>();
         public List<SceneConnection> connections = new List<SceneConnection>();
     }

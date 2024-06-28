@@ -24,7 +24,10 @@ namespace SceneSystem
             GUILayout.Label("Act Editor for Visual Novel", EditorStyles.boldLabel);
 
             actData.name = EditorGUILayout.TextField("Act Name", actData.name);
-
+            EditorGUILayout.BeginHorizontal();
+            actData.firstCharacterName = EditorGUILayout.TextField("First Character Name", actData.name);
+            actData.secondCharacterName = EditorGUILayout.TextField("Second Character Name", actData.name);
+            EditorGUILayout.EndHorizontal();
             if (GUILayout.Button("Add Scene"))
             {
                 actData.scenes.Add(new SceneData());
