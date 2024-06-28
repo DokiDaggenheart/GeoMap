@@ -649,7 +649,6 @@ Transform:
   - {fileID: 1054705959}
   - {fileID: 1786976163}
   - {fileID: 1218041599}
-  - {fileID: 1502702690}
   - {fileID: 1527860413}
   m_Father: {fileID: 1290411179}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3990,7 +3989,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1218041599}
   m_Layer: 0
-  m_Name: Point9 (1)
+  m_Name: Point10
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -4974,101 +4973,109 @@ MonoBehaviour:
     landscape: {fileID: 11400000, guid: ee8a98e3988a2c64b944a85fb9ecf301, type: 2}
     start: {fileID: 189062422}
     end: {fileID: 429687664}
-    direction: 0
     length: 20
     firstWeather: 1
     firstWeatherLength: 0.6
     secondWeather: 0
+    firstDirection: 0
+    firstDirectionLength: 0
+    secondDirection: 0
   - name: 
     logs: []
     landscape: {fileID: 0}
     start: {fileID: 429687664}
     end: {fileID: 944181839}
-    direction: 0
     length: 0
     firstWeather: 0
     firstWeatherLength: 0
     secondWeather: 0
+    firstDirection: 0
+    firstDirectionLength: 0
+    secondDirection: 0
   - name: 
     logs: []
     landscape: {fileID: 0}
     start: {fileID: 944181839}
     end: {fileID: 286563712}
-    direction: 0
     length: 0
     firstWeather: 0
     firstWeatherLength: 0
     secondWeather: 0
+    firstDirection: 0
+    firstDirectionLength: 0
+    secondDirection: 0
   - name: 
     logs: []
     landscape: {fileID: 0}
     start: {fileID: 286563712}
     end: {fileID: 1583835544}
-    direction: 0
     length: 0
     firstWeather: 0
     firstWeatherLength: 0
     secondWeather: 0
+    firstDirection: 0
+    firstDirectionLength: 0
+    secondDirection: 0
   - name: 
     logs: []
     landscape: {fileID: 0}
     start: {fileID: 1583835544}
     end: {fileID: 1008391640}
-    direction: 0
     length: 0
     firstWeather: 0
     firstWeatherLength: 0
     secondWeather: 0
+    firstDirection: 0
+    firstDirectionLength: 0
+    secondDirection: 0
   - name: 
     logs: []
     landscape: {fileID: 0}
     start: {fileID: 1008391640}
     end: {fileID: 786270578}
-    direction: 0
     length: 0
     firstWeather: 0
     firstWeatherLength: 0
     secondWeather: 0
+    firstDirection: 0
+    firstDirectionLength: 0
+    secondDirection: 0
   - name: 
     logs: []
     landscape: {fileID: 0}
     start: {fileID: 786270578}
     end: {fileID: 1054705959}
-    direction: 0
     length: 0
     firstWeather: 0
     firstWeatherLength: 0
     secondWeather: 0
+    firstDirection: 0
+    firstDirectionLength: 0
+    secondDirection: 0
   - name: 
     logs: []
     landscape: {fileID: 0}
     start: {fileID: 1054705959}
     end: {fileID: 1786976163}
-    direction: 0
     length: 0
     firstWeather: 0
     firstWeatherLength: 0
     secondWeather: 0
+    firstDirection: 0
+    firstDirectionLength: 0
+    secondDirection: 0
   - name: 
     logs: []
     landscape: {fileID: 0}
     start: {fileID: 1786976163}
     end: {fileID: 1218041599}
-    direction: 0
     length: 0
     firstWeather: 0
     firstWeatherLength: 0
     secondWeather: 0
-  - name: 
-    logs: []
-    landscape: {fileID: 0}
-    start: {fileID: 1218041599}
-    end: {fileID: 1502702690}
-    direction: 0
-    length: 0
-    firstWeather: 0
-    firstWeatherLength: 0
-    secondWeather: 0
+    firstDirection: 0
+    firstDirectionLength: 0
+    secondDirection: 0
   _spacingLength: 0.2
   _dotPrefab: {fileID: 1632984216819298127, guid: cadb4fad2478563499e8c483132fec12, type: 3}
   _maxEnergy: 100
@@ -5102,6 +5109,15 @@ MonoBehaviour:
   _morningCoefficient: 0
   _dayCoefficient: 0
   _eveningCoefficient: 0
+  _temperatureState: 0
+  _currentTemperature: 0
+  _coldMultiplier: 0
+  _coldCondition: 0
+  _normalMultiplier: 0
+  _normalCondition: 0
+  _hotMultiplier: 0
+  _minTemperature: 0
+  _maxTemperature: 0
 --- !u!4 &1449076302
 Transform:
   m_ObjectHideFlags: 0
@@ -5201,37 +5217,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1502702689
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1502702690}
-  m_Layer: 0
-  m_Name: Point9 (2)
-  m_TagString: Untagged
-  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1502702690
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1502702689}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.534, y: -4.891, z: -6.737012}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 128187925}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1507484240
 GameObject:
   m_ObjectHideFlags: 0
