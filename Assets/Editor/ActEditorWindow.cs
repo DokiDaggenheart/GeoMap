@@ -25,8 +25,8 @@ namespace SceneSystem
 
             actData.name = EditorGUILayout.TextField("Act Name", actData.name);
             EditorGUILayout.BeginHorizontal();
-            actData.firstCharacterName = EditorGUILayout.TextField("First Character Name", actData.name);
-            actData.secondCharacterName = EditorGUILayout.TextField("Second Character Name", actData.name);
+            actData.firstCharacterName = EditorGUILayout.TextField("First Character Name", actData.firstCharacterName);
+            actData.secondCharacterName = EditorGUILayout.TextField("Second Character Name", actData.secondCharacterName);
             EditorGUILayout.EndHorizontal();
             if (GUILayout.Button("Add Scene"))
             {
@@ -38,11 +38,11 @@ namespace SceneSystem
             for (int i = 0; i < actData.scenes.Count; i++)
             {
                 var scene = actData.scenes[i];
-                var window = GUILayout.Window(i, new Rect((10 + i * 240) + (240*hSbarValue), 30 + (180*vSbarValue), 200, 250), id => DrawSceneWindow(id, scene), "Scene " + (i + 1));
+                var window = GUILayout.Window(i, new Rect((-1800 + i * 240) + (240 * hSbarValue), 30 + (180 * vSbarValue), 200, 250), id => DrawSceneWindow(id, scene), "Scene " + (i + 1));
             }
             EndWindows();
 
-            hSbarValue = (GUILayout.HorizontalScrollbar(hSbarValue, 1.0f, -10.0f, 10.0f)* -1);
+            hSbarValue = (GUILayout.HorizontalScrollbar(hSbarValue, 1.0f, -10.0f, 10.0f) * -1);
             foreach (var connection in actData.connections)
             {
                 DrawConnection(connection);
@@ -79,7 +79,7 @@ namespace SceneSystem
         private void DrawSceneWindow(int id, SceneData scene)
         {
             scene.name = EditorGUILayout.TextField("Scene Name", scene.name);
-            scene.text = EditorGUILayout.TextArea(scene.text, GUILayout.Height(40));
+            scene.text = EditorGUILayout.TextArea(scene.text, EditorStyles.textArea, GUILayout.Width(190), GUILayout.ExpandHeight(true));
             scene.character1Image = (Sprite)EditorGUILayout.ObjectField("Character 1 Image", scene.character1Image, typeof(Sprite), false);
             scene.character2Image = (Sprite)EditorGUILayout.ObjectField("Character 2 Image", scene.character2Image, typeof(Sprite), false);
             scene.speakingCharacter = EditorGUILayout.Popup("Speaking Character", scene.speakingCharacter, new string[] { "Character 1", "Character 2" });
