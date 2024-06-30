@@ -10,12 +10,12 @@ public class UISystem : MonoBehaviour
     [Inject] private MovementController _movementController;
 
     [SerializeField] private TextMeshProUGUI speedText;
-    [SerializeField] private TextMeshProUGUI temperatureText;
+    [SerializeField] private TextMeshProUGUI TemperatureText;
     [SerializeField] private Image WetherIcon;
 
     private void Update()
     {
         speedText.text = _movementController.GetCurrentSpeed();
-        temperatureText.text = _movementController.GetCurrentTemperature();
+
     }
 }
