@@ -183,8 +183,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Mood:'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 30f0d4ed322035e4dbdced7f5c398f63, type: 2}
-  m_sharedMaterial: {fileID: -4911516107186118395, guid: 30f0d4ed322035e4dbdced7f5c398f63, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -208,7 +208,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 39.9
+  m_fontSize: 32.3
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -451,8 +451,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Bag
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 63f07beeb69f0544d8faaee347a02f4e, type: 2}
-  m_sharedMaterial: {fileID: -6737674178951081815, guid: 63f07beeb69f0544d8faaee347a02f4e, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -476,7 +476,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 40.35
+  m_fontSize: 23.35
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -832,8 +832,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: <color=green>100%
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 5babab7f450b5624e82d9395f80d085d, type: 2}
-  m_sharedMaterial: {fileID: 155390346693983968, guid: 5babab7f450b5624e82d9395f80d085d, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -966,8 +966,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Rest
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 63f07beeb69f0544d8faaee347a02f4e, type: 2}
-  m_sharedMaterial: {fileID: -6737674178951081815, guid: 63f07beeb69f0544d8faaee347a02f4e, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -991,7 +991,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 31.9
+  m_fontSize: 24.5
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1184,8 +1184,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: <color=green>Morning</color>
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 4eba2fdcaa7b38f468b46d450b938a00, type: 2}
-  m_sharedMaterial: {fileID: 1470213754778730180, guid: 4eba2fdcaa7b38f468b46d450b938a00, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1209,7 +1209,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 26.65
+  m_fontSize: 21.55
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2115,8 +2115,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Ach
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 63f07beeb69f0544d8faaee347a02f4e, type: 2}
-  m_sharedMaterial: {fileID: -6737674178951081815, guid: 63f07beeb69f0544d8faaee347a02f4e, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2140,7 +2140,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 40.35
+  m_fontSize: 23.35
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2657,8 +2657,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Energy:'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 30f0d4ed322035e4dbdced7f5c398f63, type: 2}
-  m_sharedMaterial: {fileID: -4911516107186118395, guid: 30f0d4ed322035e4dbdced7f5c398f63, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3629,8 +3629,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Stamina:'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 30f0d4ed322035e4dbdced7f5c398f63, type: 2}
-  m_sharedMaterial: {fileID: -4911516107186118395, guid: 30f0d4ed322035e4dbdced7f5c398f63, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4069,8 +4069,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: <color=green>Sad
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 5babab7f450b5624e82d9395f80d085d, type: 2}
-  m_sharedMaterial: {fileID: 155390346693983968, guid: 5babab7f450b5624e82d9395f80d085d, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4821,8 +4821,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Log
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 63f07beeb69f0544d8faaee347a02f4e, type: 2}
-  m_sharedMaterial: {fileID: -6737674178951081815, guid: 63f07beeb69f0544d8faaee347a02f4e, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4846,7 +4846,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 40.35
+  m_fontSize: 23.25
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -4926,37 +4926,53 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _pathList:
-  - name: 
+  - name: 1_Pokidaya_dom
     logs:
+    - isImporntant: 1
+      Sad: "\u041B\u044E\u0434\u0438 \u0440\u0430\u0437\u0433\u0440\u0435\u0431\u0430\u044E\u0442
+        \u043F\u043E\u0441\u043B\u0435\u0434\u0441\u0442\u0432\u0438\u044F \u0448\u0442\u043E\u0440\u043C\u0430."
+      Neutral: "\u041B\u044E\u0434\u0438 \u0440\u0430\u0437\u0433\u0440\u0435\u0431\u0430\u044E\u0442
+        \u043F\u043E\u0441\u043B\u0435\u0434\u0441\u0442\u0432\u0438\u044F \u0448\u0442\u043E\u0440\u043C\u0430."
+      Happy: "\u041B\u044E\u0434\u0438 \u0440\u0430\u0437\u0433\u0440\u0435\u0431\u0430\u044E\u0442
+        \u043F\u043E\u0441\u043B\u0435\u0434\u0441\u0442\u0432\u0438\u044F \u0448\u0442\u043E\u0440\u043C\u0430."
     - isImporntant: 0
-      Sad: "\u041C\u0435\u0440\u0442\u0432\u0430\u044F \u043A\u043E\u0440\u043E\u0432\u0430"
-      Neutral: "\u041C\u0435\u0440\u0442\u0432\u0430\u044F \u043A\u043E\u0440\u043E\u0432\u0430"
-      Happy: "\u041C\u0435\u0440\u0442\u0432\u0430\u044F \u043A\u043E\u0440\u043E\u0432\u0430"
+      Sad: "\u042D\u0442\u043E \u0434\u0435\u0440\u0435\u0432\u043E \u0442\u043E\u0447\u043D\u043E
+        \u0440\u0430\u0437\u0434\u0430\u0432\u0438\u0442 \u0441\u043E\u0441\u0435\u0434\u0441\u043A\u0438
+        \u0434\u043E\u043C"
+      Neutral: "\u042D\u0442\u043E \u0434\u0435\u0440\u0435\u0432\u043E \u0442\u043E\u0447\u043D\u043E
+        \u0440\u0430\u0437\u0434\u0430\u0432\u0438\u0442 \u0441\u043E\u0441\u0435\u0434\u0441\u043A\u0438
+        \u0434\u043E\u043C"
+      Happy: "\u042D\u0442\u043E \u0434\u0435\u0440\u0435\u0432\u043E \u0442\u043E\u0447\u043D\u043E
+        \u0440\u0430\u0437\u0434\u0430\u0432\u0438\u0442 \u0441\u043E\u0441\u0435\u0434\u0441\u043A\u0438
+        \u0434\u043E\u043C"
     - isImporntant: 0
-      Sad: 2
-      Neutral: 2
-      Happy: 2
+      Sad: "\u041F\u0430\u0441\u043C\u0443\u0440\u043D\u043E, \u043D\u043E \u0434\u043E\u0436\u0434\u044F
+        \u043D\u0435\u0442."
+      Neutral: "\u041F\u0430\u0441\u043C\u0443\u0440\u043D\u043E, \u043D\u043E \u0434\u043E\u0436\u0434\u044F
+        \u043D\u0435\u0442."
+      Happy: "\u041F\u0430\u0441\u043C\u0443\u0440\u043D\u043E, \u043D\u043E \u0434\u043E\u0436\u0434\u044F
+        \u043D\u0435\u0442."
     - isImporntant: 0
-      Sad: "\u043A\u0430\u043F\u0435\u0446 3"
-      Neutral: 
-      Happy: "\u043A\u0430\u043F\u0435\u0446 3"
+      Sad: "\u041D\u0435\u0431\u043E \u0441\u043B\u043E\u0432\u043D\u043E \u043E\u0431\u0440\u0443\u0448\u0438\u043B\u043E\u0441\u044C
+        \u043D\u0430 \u0437\u0435\u043C\u043B\u044E."
+      Neutral: "\u041D\u0435\u0431\u043E \u0441\u043B\u043E\u0432\u043D\u043E \u043E\u0431\u0440\u0443\u0448\u0438\u043B\u043E\u0441\u044C
+        \u043D\u0430 \u0437\u0435\u043C\u043B\u044E."
+      Happy: "\u041D\u0435\u0431\u043E \u0441\u043B\u043E\u0432\u043D\u043E \u043E\u0431\u0440\u0443\u0448\u0438\u043B\u043E\u0441\u044C
+        \u043D\u0430 \u0437\u0435\u043C\u043B\u044E."
     - isImporntant: 0
-      Sad: 
-      Neutral: 
-      Happy: "\u0443\u0436\u0435 4"
+      Sad: "\u041A\u0430\u0436\u0435\u0442\u0441\u044F, \u044F \u0443\u0436\u0435
+        \u0443\u0441\u0442\u0430\u043B\u0430. \u041D\u043E\u0433\u0438 \u0431\u043E\u043B\u044F\u0442."
+      Neutral: "\u041A\u0430\u0436\u0435\u0442\u0441\u044F, \u044F \u0443\u0436\u0435
+        \u0443\u0441\u0442\u0430\u043B\u0430. \u041D\u043E\u0433\u0438 \u0431\u043E\u043B\u044F\u0442."
+      Happy: "\u041A\u0430\u0436\u0435\u0442\u0441\u044F, \u044F \u0443\u0436\u0435
+        \u0443\u0441\u0442\u0430\u043B\u0430. \u041D\u043E\u0433\u0438 \u0431\u043E\u043B\u044F\u0442."
     - isImporntant: 0
-      Sad: 
-      Neutral: 
-      Happy: "\u0434\u0430\u043B\u044C\u0448\u0435 \u043B\u0435\u0433\u0447\u0435
-        5"
-    - isImporntant: 0
-      Sad: 
-      Neutral: 
-      Happy: "\u0443\u0436\u0435 \u0442\u043E\u0447\u043D\u043E \u0440\u0430\u0431\u043E\u0430\u0442\u0435\u0442"
-    - isImporntant: 0
-      Sad: 
-      Neutral: 
-      Happy: "\u0436\u0434\u0435\u043C \u043F\u043E\u0441\u043B\u0435\u0434\u043D\u0438\u0439"
+      Sad: "\u041E\u0431\u043B\u0430\u043A\u0430 \u0440\u0430\u0441\u0441\u0435\u0438\u0432\u0430\u044E\u0442\u0441\u044F.
+        \u041C\u043D\u0435 \u0432\u0435\u0437\u0435\u0442."
+      Neutral: "\u041E\u0431\u043B\u0430\u043A\u0430 \u0440\u0430\u0441\u0441\u0435\u0438\u0432\u0430\u044E\u0442\u0441\u044F.
+        \u041C\u043D\u0435 \u0432\u0435\u0437\u0435\u0442."
+      Happy: "\u041E\u0431\u043B\u0430\u043A\u0430 \u0440\u0430\u0441\u0441\u0435\u0438\u0432\u0430\u044E\u0442\u0441\u044F.
+        \u041C\u043D\u0435 \u0432\u0435\u0437\u0435\u0442."
     - isImporntant: 0
       Sad: 
       Neutral: 
@@ -4964,118 +4980,553 @@ MonoBehaviour:
     - isImporntant: 0
       Sad: 
       Neutral: 
-      Happy: "\u043F\u0440\u044F\u043C\u0430\u044F, 9"
+      Happy: 
     - isImporntant: 0
       Sad: 
       Neutral: 
-      Happy: "\u0432\u0441\u0435 \u0440\u0430\u0431\u043E\u0442\u0430\u0435\u0442,
-        10"
-    landscape: {fileID: 11400000, guid: ee8a98e3988a2c64b944a85fb9ecf301, type: 2}
+      Happy: "\u043F\u0440\u044F\u043C\u0430\u044F, 9"
+    firstLandscape: {fileID: 11400000, guid: ee8a98e3988a2c64b944a85fb9ecf301, type: 2}
+    firstLandscapeLength: 0.514
+    secondLandscape: {fileID: 11400000, guid: ee8a98e3988a2c64b944a85fb9ecf301, type: 2}
     start: {fileID: 189062422}
     end: {fileID: 429687664}
     length: 20
-    firstWeather: 1
-    firstWeatherLength: 0.6
-    secondWeather: 0
-    firstDirection: 0
-    firstDirectionLength: 0
-    secondDirection: 0
-  - name: 
-    logs: []
-    landscape: {fileID: 0}
+    firstWeather: 2
+    firstWeatherLength: 0.523
+    secondWeather: 2
+    firstDirection: 2
+    firstDirectionLength: 0.514
+    secondDirection: 2
+  - name: 2_Most_Granicka
+    logs:
+    - isImporntant: 1
+      Sad: "\u0421\u043E\u043B\u043D\u0446\u0435 \u0432\u044B\u0445\u043E\u0434\u0438\u0442
+        \u0438\u0437-\u0437\u0430 \u0442\u0443\u0447."
+      Neutral: "\u0421\u043E\u043B\u043D\u0446\u0435 \u0432\u044B\u0445\u043E\u0434\u0438\u0442
+        \u0438\u0437-\u0437\u0430 \u0442\u0443\u0447."
+      Happy: "\u0421\u043E\u043B\u043D\u0446\u0435 \u0432\u044B\u0445\u043E\u0434\u0438\u0442
+        \u0438\u0437-\u0437\u0430 \u0442\u0443\u0447."
+    - isImporntant: 0
+      Sad: "\u0412\u043F\u0435\u0440\u0435\u0434\u0438 \u0431\u043B\u0435\u0441\u0442\u0438\u0442
+        \u0440\u0435\u043A\u0430. "
+      Neutral: "\u0412\u043F\u0435\u0440\u0435\u0434\u0438 \u0431\u043B\u0435\u0441\u0442\u0438\u0442
+        \u0440\u0435\u043A\u0430. "
+      Happy: "\u0412\u043F\u0435\u0440\u0435\u0434\u0438 \u0431\u043B\u0435\u0441\u0442\u0438\u0442
+        \u0440\u0435\u043A\u0430. "
+    - isImporntant: 1
+      Sad: "\u0411\u0435\u0441\u0438\u0442 \u0441\u043A\u0440\u0438\u043F \u0434\u043E\u0441\u043E\u043A
+        \u043D\u0430 \u043C\u043E\u0441\u0442\u0443."
+      Neutral: "\u0414\u043E\u0441\u043A\u0438 \u043C\u043E\u0441\u0442\u0430 \u0441\u043A\u0440\u0435\u043F\u044F\u0442."
+      Happy: "\u0421\u043A\u0440\u0438\u043F \u0434\u043E\u0441\u043E\u043A \u043D\u0430\u043F\u043E\u043C\u0438\u043D\u0430\u0435\u0442
+        \u043C\u0443\u0437\u044B\u043A\u0443."
+    - isImporntant: 0
+      Sad: "\u0420\u0435\u043A\u0430 \u043A\u0430\u0436\u0435\u0442\u0441\u044F \u0448\u0438\u0440\u0435,
+        \u0447\u0435\u043C \u043E\u0431\u044B\u0447\u043D\u043E."
+      Neutral: "\u0420\u0435\u043A\u0430 \u043A\u0430\u0436\u0435\u0442\u0441\u044F
+        \u0448\u0438\u0440\u0435, \u0447\u0435\u043C \u043E\u0431\u044B\u0447\u043D\u043E."
+      Happy: "\u0420\u0435\u043A\u0430 \u043A\u0430\u0436\u0435\u0442\u0441\u044F
+        \u0448\u0438\u0440\u0435, \u0447\u0435\u043C \u043E\u0431\u044B\u0447\u043D\u043E."
+    firstLandscape: {fileID: 11400000, guid: ee8a98e3988a2c64b944a85fb9ecf301, type: 2}
+    firstLandscapeLength: 0.546
+    secondLandscape: {fileID: 11400000, guid: ee8a98e3988a2c64b944a85fb9ecf301, type: 2}
     start: {fileID: 429687664}
     end: {fileID: 944181839}
-    length: 0
-    firstWeather: 0
+    length: 5
+    firstWeather: 1
     firstWeatherLength: 0
-    secondWeather: 0
-    firstDirection: 0
-    firstDirectionLength: 0
-    secondDirection: 0
-  - name: 
-    logs: []
-    landscape: {fileID: 0}
+    secondWeather: 1
+    firstDirection: 2
+    firstDirectionLength: 0.556
+    secondDirection: 2
+  - name: 3_Put_v_Kurlov
+    logs:
+    - isImporntant: 0
+      Sad: "\u041D\u0430\u0447\u0438\u043D\u0430\u0435\u0442\u0441 \u043F\u043E\u0434\u044A\u0435\u043C. "
+      Neutral: "\u041D\u0430\u0447\u0438\u043D\u0430\u0435\u0442\u0441 \u043F\u043E\u0434\u044A\u0435\u043C. "
+      Happy: "\u041D\u0430\u0447\u0438\u043D\u0430\u0435\u0442\u0441 \u043F\u043E\u0434\u044A\u0435\u043C. "
+    - isImporntant: 0
+      Sad: "\u041D\u0435\u0431\u043E \u043F\u0440\u043E\u044F\u0441\u043D\u044F\u0435\u0442\u0441\u044F,
+        \u0441\u043E\u043B\u043D\u0446\u0435 \u0441\u0432\u0435\u0442\u0438\u0442
+        \u044F\u0440\u0447\u0435."
+      Neutral: "\u041D\u0435\u0431\u043E \u043F\u0440\u043E\u044F\u0441\u043D\u044F\u0435\u0442\u0441\u044F,
+        \u0441\u043E\u043B\u043D\u0446\u0435 \u0441\u0432\u0435\u0442\u0438\u0442
+        \u044F\u0440\u0447\u0435."
+      Happy: "\u041D\u0435\u0431\u043E \u043F\u0440\u043E\u044F\u0441\u043D\u044F\u0435\u0442\u0441\u044F,
+        \u0441\u043E\u043B\u043D\u0446\u0435 \u0441\u0432\u0435\u0442\u0438\u0442
+        \u044F\u0440\u0447\u0435."
+    - isImporntant: 0
+      Sad: "\u041F\u043E\u0445\u043E\u0436\u0435 \u043D\u0430 \u043E\u043A\u0440\u0430\u0438\u043D\u044B
+        \u0416\u0438\u0442\u043D\u0438\u0446\u044B, \u043D\u043E \u0437\u0430\u043F\u0430\u0445
+        \u0434\u0440\u0443\u0433\u043E\u0439."
+      Neutral: "\u041F\u043E\u0445\u043E\u0436\u0435 \u043D\u0430 \u043E\u043A\u0440\u0430\u0438\u043D\u044B
+        \u0416\u0438\u0442\u043D\u0438\u0446\u044B, \u043D\u043E \u0437\u0430\u043F\u0430\u0445
+        \u0434\u0440\u0443\u0433\u043E\u0439."
+      Happy: "\u041F\u043E\u0445\u043E\u0436\u0435 \u043D\u0430 \u043E\u043A\u0440\u0430\u0438\u043D\u044B
+        \u0416\u0438\u0442\u043D\u0438\u0446\u044B, \u043D\u043E \u0437\u0430\u043F\u0430\u0445
+        \u0434\u0440\u0443\u0433\u043E\u0439."
+    - isImporntant: 0
+      Sad: "\u0425\u0438! \u0421\u0442\u0430\u0440\u0443\u0448\u043A\u0430 \u043D\u0430
+        \u043A\u0440\u044B\u043B\u044C\u0446\u0435 \u0447\u0442\u043E-\u0442\u043E
+        \u043D\u0430\u043F\u0435\u0432\u0430\u0435\u0442."
+      Neutral: "\u0425\u0438! \u0421\u0442\u0430\u0440\u0443\u0448\u043A\u0430 \u043D\u0430
+        \u043A\u0440\u044B\u043B\u044C\u0446\u0435 \u0447\u0442\u043E-\u0442\u043E
+        \u043D\u0430\u043F\u0435\u0432\u0430\u0435\u0442."
+      Happy: "\u0425\u0438! \u0421\u0442\u0430\u0440\u0443\u0448\u043A\u0430 \u043D\u0430
+        \u043A\u0440\u044B\u043B\u044C\u0446\u0435 \u0447\u0442\u043E-\u0442\u043E
+        \u043D\u0430\u043F\u0435\u0432\u0430\u0435\u0442."
+    - isImporntant: 1
+      Sad: "\u041D\u0435\u0431\u043E \u0442\u0430\u043A\u043E\u0435 \u0441\u0435\u0440\u043E\u0435
+        \u0438 \u043F\u043B\u043E\u0442\u043D\u043E\u0435, \u0445\u043E\u0447\u0435\u0442\u0441\u044F
+        \u0432 \u043D\u0435\u0433\u043E \u043A\u0440\u044E\u043A \u0432\u0431\u0438\u0442\u044C
+        \u0438 \u043F\u043E\u0432\u0435\u0441\u0438\u0442\u044C\u0441\u044F."
+      Neutral: "\u041D\u0435\u0431\u043E \u043E\u043F\u0440\u0435\u0434\u0435\u043B\u0438\u0441\u044C
+        \u0443\u0436\u0435, \u0442\u0435\u0431\u0435 \u043D\u0430\u0440\u0432\u0438\u0442\u0441\u044F
+        \u0441\u043E\u043B\u043D\u0446\u0435 \u0438\u043B\u0438 \u043D\u0435\u0442?"
+      Happy: "\u042D\u0442\u043E \u0441\u0440\u043E\u0435 \u043D\u0435\u0431\u043E
+        \u043C\u043D\u0435 \u043F\u043E \u0434\u0443\u0448\u0435, \u0434\u044B\u0448\u0438\u0442\u0441\u044F
+        \u043B\u0435\u0433\u0447\u0435."
+    - isImporntant: 0
+      Sad: "\u0422\u043E \u043B\u0438 \u043A\u043E\u043B\u0435\u0441\u043E \u0441\u043A\u0440\u0438\u043F\u0438\u0442,
+        \u0442\u043E \u043B\u0438 \u043A\u043E\u043B\u0435\u043D\u0438."
+      Neutral: "\u0422\u043E \u043B\u0438 \u043A\u043E\u043B\u0435\u0441\u043E \u0441\u043A\u0440\u0438\u043F\u0438\u0442,
+        \u0442\u043E \u043B\u0438 \u043A\u043E\u043B\u0435\u043D\u0438."
+      Happy: "\u0422\u043E \u043B\u0438 \u043A\u043E\u043B\u0435\u0441\u043E \u0441\u043A\u0440\u0438\u043F\u0438\u0442,
+        \u0442\u043E \u043B\u0438 \u043A\u043E\u043B\u0435\u043D\u0438."
+    - isImporntant: 0
+      Sad: "\u041C\u0435\u0441\u0442\u043D\u044B\u0435 \u0436\u0438\u0442\u0435\u043B\u0438
+        \u043A\u0430\u0436\u0443\u0442\u0441\u044F \u043E\u0442\u0441\u0442\u0440\u0430\u043D\u0435\u043D\u043D\u044B\u043C\u0438."
+      Neutral: "\u041C\u0435\u0441\u0442\u043D\u044B\u0435 \u0436\u0438\u0442\u0435\u043B\u0438
+        \u043A\u0430\u0436\u0443\u0442\u0441\u044F \u043E\u0442\u0441\u0442\u0440\u0430\u043D\u0435\u043D\u043D\u044B\u043C\u0438."
+      Happy: "\u041C\u0435\u0441\u0442\u043D\u044B\u0435 \u0436\u0438\u0442\u0435\u043B\u0438
+        \u043A\u0430\u0436\u0443\u0442\u0441\u044F \u043E\u0442\u0441\u0442\u0440\u0430\u043D\u0435\u043D\u043D\u044B\u043C\u0438."
+    firstLandscape: {fileID: 11400000, guid: ee8a98e3988a2c64b944a85fb9ecf301, type: 2}
+    firstLandscapeLength: 0.5
+    secondLandscape: {fileID: 11400000, guid: ee8a98e3988a2c64b944a85fb9ecf301, type: 2}
     start: {fileID: 944181839}
     end: {fileID: 286563712}
-    length: 0
-    firstWeather: 0
-    firstWeatherLength: 0
-    secondWeather: 0
+    length: 25
+    firstWeather: 1
+    firstWeatherLength: 0.656
+    secondWeather: 2
     firstDirection: 0
-    firstDirectionLength: 0
-    secondDirection: 0
-  - name: 
-    logs: []
-    landscape: {fileID: 0}
-    start: {fileID: 286563712}
-    end: {fileID: 1583835544}
-    length: 0
-    firstWeather: 0
-    firstWeatherLength: 0
-    secondWeather: 0
-    firstDirection: 0
-    firstDirectionLength: 0
-    secondDirection: 0
-  - name: 
-    logs: []
-    landscape: {fileID: 0}
+    firstDirectionLength: 0.66
+    secondDirection: 2
+  - name: 4_Pokidaya kurlov
+    logs:
+    - isImporntant: 1
+      Sad: "\u041B\u0438\u0437\u0430, \u041C\u0430\u0440\u0438\u044F, \u0421\u043E\u0444\u044C\u044F...
+        \u0432\u0438\u0434\u0438\u043C\u043E \u043E\u043D\u0438 \u043F\u043E\u0433\u0438\u0431\u043B\u0438
+        \u0438\u043B\u0438 \u0431\u0440\u043E\u043B\u0441\u0438\u043B\u0438 \u0435\u0433\u043E."
+      Neutral: "\u0414\u0435\u0434\u0443, \u0441\u0443\u0434\u044F \u043F\u043E \u0432\u0441\u0435\u043C\u0443,
+        \u043D\u0435 \u043B\u0435\u0433\u043E \u043F\u0440\u0438\u0448\u043B\u043E\u0441\u044C.
+        \u041C\u043D\u0435 \u0436\u0430\u043B\u044C."
+      Happy: "\u041B\u0438\u0437\u0430, \u041C\u0430\u0440\u0438\u044F, \u0421\u043E\u0444\u044C\u044F...
+        \u0431\u0435\u0440\u0435\u0433\u0438\u0442\u0435 \u0434\u0435\u0434\u0443\u0448\u043A\u0443."
+    - isImporntant: 0
+      Sad: "\u0425\u043E\u0447\u0443 \u0432 \u0433\u043E\u0440\u044F\u0447\u0438\u0439
+        \u0434\u0443\u0448. "
+      Neutral: "\u0425\u043E\u0447\u0443 \u0432 \u0433\u043E\u0440\u044F\u0447\u0438\u0439
+        \u0434\u0443\u0448. "
+      Happy: "\u0425\u043E\u0447\u0443 \u0432 \u0433\u043E\u0440\u044F\u0447\u0438\u0439
+        \u0434\u0443\u0448. "
+    - isImporntant: 0
+      Sad: "\u041A\u0430\u0436\u0435\u0442\u0441\u044F, \u0434\u043E\u0436\u0434\u044C
+        \u043F\u0440\u0435\u0441\u043B\u0435\u0434\u0443\u0435\u0442 \u043C\u0435\u043D\u044F."
+      Neutral: "\u041A\u0430\u0436\u0435\u0442\u0441\u044F, \u0434\u043E\u0436\u0434\u044C
+        \u043F\u0440\u0435\u0441\u043B\u0435\u0434\u0443\u0435\u0442 \u043C\u0435\u043D\u044F."
+      Happy: "\u041A\u0430\u0436\u0435\u0442\u0441\u044F, \u0434\u043E\u0436\u0434\u044C
+        \u043F\u0440\u0435\u0441\u043B\u0435\u0434\u0443\u0435\u0442 \u043C\u0435\u043D\u044F."
+    - isImporntant: 1
+      Sad: "\u0412\u043E\u0434\u0438\u0442\u0435\u043B\u044C \u0433\u0440\u0443\u0437\u043E\u0432\u0438\u043A\u0430
+        \u043D\u0430\u0437\u0432\u0430\u043B \u043C\u0435\u043D\u044F \"\u0414\u0443\u0440\u043E\u0439\".
+        \u0414\u0435\u0440\u0436\u0438 \u0444\u0430\u043A, \u0441\u0432\u0438\u043D\u044C\u044F! "
+      Neutral: "\u0412\u043E\u0434\u0438\u0442\u0435\u043B\u044C \u0433\u0440\u0443\u0437\u043E\u0432\u0438\u043A\u0430
+        \u043D\u0430\u0437\u0432\u0430\u043B \u043C\u0435\u043D\u044F \"\u0414\u0443\u0440\u043E\u0439\".
+        \u041A\u043E\u0437\u0451\u043B!"
+      Happy: "\u0412\u043E\u0434\u0438\u0442\u0435\u043B\u044C \u0433\u0440\u0443\u0437\u043E\u0432\u0438\u043A\u0430
+        \u043D\u0430\u0437\u0432\u0430\u043B \u043C\u0435\u043D\u044F \"\u0414\u0443\u0440\u043E\u0439\".
+        \u0410 \u0432\u0435\u0434\u044C \u0442\u0430\u043A \u043E\u043D\u043E \u0438
+        \u0435\u0441\u0442\u044C. "
+    - isImporntant: 0
+      Sad: "\u041F\u0440\u043E\u0442\u0438\u0432\u043D\u044B\u0439 \u0432\u0435\u0442\u0440\u043E\u043A
+        \u043D\u0430 \u0443\u043B\u0438\u0446\u0435."
+      Neutral: "\u041F\u0440\u043E\u0445\u043B\u0430\u0434\u043D\u043E, \u043B\u0438\u0448\u044C
+        \u0431\u044B \u043D\u0435 \u0437\u0430\u0431\u043E\u043B\u0435\u0442\u044C."
+      Happy: "\u041F\u0440\u043E\u0445\u043B\u0430\u0434\u0430. \u041B\u0443\u0447\u0448\u0435
+        \u0447\u0435\u043C \u043F\u0435\u043A\u043B\u043E!"
+    - isImporntant: 0
+      Sad: "\u042F \u0443\u0436\u0435 \u0437\u0430\u0434\u043E\u043B\u0431\u0430\u043B\u0430\u0441\u044C
+        \u043A\u0440\u0443\u0442\u0438\u0442\u044C \u043F\u0435\u0434\u0430\u043B\u0438."
+      Neutral: "\u042F \u0443\u0436\u0435 \u0437\u0430\u0434\u043E\u043B\u0431\u0430\u043B\u0430\u0441\u044C
+        \u043A\u0440\u0443\u0442\u0438\u0442\u044C \u043F\u0435\u0434\u0430\u043B\u0438."
+      Happy: "\u042F \u0443\u0436\u0435 \u0437\u0430\u0434\u043E\u043B\u0431\u0430\u043B\u0430\u0441\u044C
+        \u043A\u0440\u0443\u0442\u0438\u0442\u044C \u043F\u0435\u0434\u0430\u043B\u0438."
+    firstLandscape: {fileID: 11400000, guid: ee8a98e3988a2c64b944a85fb9ecf301, type: 2}
+    firstLandscapeLength: 0.3
+    secondLandscape: {fileID: 11400000, guid: 6c714d5c6d648b04f97670a58a521ea5, type: 2}
     start: {fileID: 1583835544}
     end: {fileID: 1008391640}
-    length: 0
+    length: 25
     firstWeather: 0
-    firstWeatherLength: 0
-    secondWeather: 0
+    firstWeatherLength: 0.3
+    secondWeather: 2
     firstDirection: 0
-    firstDirectionLength: 0
+    firstDirectionLength: 0.3
     secondDirection: 0
-  - name: 
-    logs: []
-    landscape: {fileID: 0}
+  - name: 5_Doroga_v_Gory
+    logs:
+    - isImporntant: 0
+      Sad: "\u0417\u0430\u043F\u0430\u0445 \u0441\u0432\u0435\u0436\u0435\u0433\u043E
+        \u0433\u043E\u0440\u043D\u043E\u0433\u043E \u0432\u043E\u0437\u0434\u0443\u0445\u0430.
+        \u0418 \u043F\u043E\u0442\u0430. "
+      Neutral: "\u0417\u0430\u043F\u0430\u0445 \u0441\u0432\u0435\u0436\u0435\u0433\u043E
+        \u0433\u043E\u0440\u043D\u043E\u0433\u043E \u0432\u043E\u0437\u0434\u0443\u0445\u0430.
+        \u0418 \u043F\u043E\u0442\u0430. "
+      Happy: "\u0417\u0430\u043F\u0430\u0445 \u0441\u0432\u0435\u0436\u0435\u0433\u043E
+        \u0433\u043E\u0440\u043D\u043E\u0433\u043E \u0432\u043E\u0437\u0434\u0443\u0445\u0430.
+        \u0418 \u043F\u043E\u0442\u0430. "
+    - isImporntant: 0
+      Sad: "\u0421\u0443\u0441\u043B\u0438\u043A \u043F\u0435\u0440\u0435\u0431\u0435\u0436\u0430\u043B
+        \u0434\u043E\u0440\u043E\u0433\u0443."
+      Neutral: "\u0421\u0443\u0441\u043B\u0438\u043A \u043F\u0435\u0440\u0435\u0431\u0435\u0436\u0430\u043B
+        \u0434\u043E\u0440\u043E\u0433\u0443."
+      Happy: "\u0421\u0443\u0441\u043B\u0438\u043A \u043F\u0435\u0440\u0435\u0431\u0435\u0436\u0430\u043B
+        \u0434\u043E\u0440\u043E\u0433\u0443."
+    - isImporntant: 0
+      Sad: "\u041F\u0430\u0441\u043C\u0443\u0440\u043D\u043E, \u043D\u0430\u0447\u0438\u043D\u0430\u0435\u0442\u0441\u044F
+        \u0434\u043E\u0436\u0434\u044C."
+      Neutral: "\u041F\u0430\u0441\u043C\u0443\u0440\u043D\u043E, \u043D\u0430\u0447\u0438\u043D\u0430\u0435\u0442\u0441\u044F
+        \u0434\u043E\u0436\u0434\u044C."
+      Happy: "\u041F\u0430\u0441\u043C\u0443\u0440\u043D\u043E, \u043D\u0430\u0447\u0438\u043D\u0430\u0435\u0442\u0441\u044F
+        \u0434\u043E\u0436\u0434\u044C."
+    - isImporntant: 0
+      Sad: "\u0412\u0435\u0440\u0448\u0438\u043D\u044B \u0441\u043A\u0440\u044B\u0442\u044B
+        \u043E\u0431\u043B\u0430\u043A\u0430\u043C\u0438."
+      Neutral: "\u0412\u0435\u0440\u0448\u0438\u043D\u044B \u0441\u043A\u0440\u044B\u0442\u044B
+        \u043E\u0431\u043B\u0430\u043A\u0430\u043C\u0438."
+      Happy: "\u0412\u0435\u0440\u0448\u0438\u043D\u044B \u0441\u043A\u0440\u044B\u0442\u044B
+        \u043E\u0431\u043B\u0430\u043A\u0430\u043C\u0438."
+    - isImporntant: 1
+      Sad: "\u041F\u0430\u043F\u0430, \u043F\u043E\u0447\u0435\u043C\u0443 \u0442\u044B
+        \u043C\u0435\u043D\u044F\u0447 \u0431\u0440\u043E\u0441\u0438\u043B? \u041E\u0442\u0432\u0435\u0442\u044C."
+      Neutral: "\u041F\u0430\u043F\u0430, \u043C\u043D\u0435 \u0442\u044F\u0436\u0435\u043B\u043E
+        \u0431\u0435\u0437 \u0442\u0435\u0431\u044F. \u0422\u044B \u0441\u043B\u044B\u0448\u0438\u0448\u044C
+        \u043C\u0435\u043D\u044F?"
+      Happy: "\u041F\u0430\u043F\u0430, \u044F \u0437\u043D\u0430\u044E \u0447\u0442\u043E
+        \u0442\u044B \u0440\u044F\u0434\u043E\u043C \u0441\u043E \u043C\u043D\u043E\u0439.
+        \u042F \u043B\u044E\u0431\u043B\u044E \u0442\u0435\u0431\u044F."
+    - isImporntant: 0
+      Sad: "\u041D\u0438\u043A\u043E\u0433\u043E \u0432\u043E\u043A\u0440\u0443\u0433.
+        \u0414\u0438\u043A\u0438\u0439 \u0448\u0443\u043C \u0434\u043E\u0436\u0434\u044F
+        \u0438 \u044F."
+      Neutral: "\u041D\u0438\u043A\u043E\u0433\u043E \u0432\u043E\u043A\u0440\u0443\u0433.
+        \u0414\u0438\u043A\u0438\u0439 \u0448\u0443\u043C \u0434\u043E\u0436\u0434\u044F
+        \u0438 \u044F."
+      Happy: "\u041D\u0438\u043A\u043E\u0433\u043E \u0432\u043E\u043A\u0440\u0443\u0433.
+        \u0414\u0438\u043A\u0438\u0439 \u0448\u0443\u043C \u0434\u043E\u0436\u0434\u044F
+        \u0438 \u044F."
+    - isImporntant: 0
+      Sad: "\u0413\u043E\u0440\u0438\u0442 \u0434\u0435\u0440\u0435\u0432\u043E.
+        \u041F\u043E\u0445\u043E\u0436\u0435 \u0447\u0442\u043E \u043C\u043E\u043B\u043D\u0438\u044F. "
+      Neutral: "\u0413\u043E\u0440\u0438\u0442 \u0434\u0435\u0440\u0435\u0432\u043E.
+        \u041F\u043E\u0445\u043E\u0436\u0435 \u0447\u0442\u043E \u043C\u043E\u043B\u043D\u0438\u044F. "
+      Happy: "\u0413\u043E\u0440\u0438\u0442 \u0434\u0435\u0440\u0435\u0432\u043E.
+        \u041F\u043E\u0445\u043E\u0436\u0435 \u0447\u0442\u043E \u043C\u043E\u043B\u043D\u0438\u044F. "
+    firstLandscape: {fileID: 11400000, guid: 6c714d5c6d648b04f97670a58a521ea5, type: 2}
+    firstLandscapeLength: 0.3
+    secondLandscape: {fileID: 11400000, guid: 884b68541c895444c9f1bc01ae44231c, type: 2}
     start: {fileID: 1008391640}
     end: {fileID: 786270578}
-    length: 0
-    firstWeather: 0
-    firstWeatherLength: 0
+    length: 30
+    firstWeather: 2
+    firstWeatherLength: 0.3
     secondWeather: 0
     firstDirection: 0
-    firstDirectionLength: 0
+    firstDirectionLength: 0.3
     secondDirection: 0
-  - name: 
-    logs: []
-    landscape: {fileID: 0}
+  - name: 6_Spusk_s_Gor
+    logs:
+    - isImporntant: 0
+      Sad: "\u0425\u043E\u043B\u043E\u0434\u043D\u044B\u0439 \u0432\u0435\u0442\u0435\u0440
+        \u043F\u0440\u043E\u043D\u0438\u0437\u044B\u0432\u0430\u0435\u0442 \u043D\u0430\u0441\u043A\u0432\u043E\u0437\u044C."
+      Neutral: "\u0425\u043E\u043B\u043E\u0434\u043D\u044B\u0439 \u0432\u0435\u0442\u0435\u0440
+        \u043F\u0440\u043E\u043D\u0438\u0437\u044B\u0432\u0430\u0435\u0442 \u043D\u0430\u0441\u043A\u0432\u043E\u0437\u044C."
+      Happy: "\u0425\u043E\u043B\u043E\u0434\u043D\u044B\u0439 \u0432\u0435\u0442\u0435\u0440
+        \u043F\u0440\u043E\u043D\u0438\u0437\u044B\u0432\u0430\u0435\u0442 \u043D\u0430\u0441\u043A\u0432\u043E\u0437\u044C."
+    - isImporntant: 0
+      Sad: "\u0413\u043B\u0430\u0432\u043D\u043E\u0435 \u0447\u0442\u043E\u0431\u044B
+        \u0442\u043E\u0440\u043C\u043E\u0437\u0430 \u043D\u0435 \u043E\u0442\u043A\u0430\u0437\u0430\u043B\u0438!
+        \u0423\u043B\u0451\u0442!"
+      Neutral: "\u0413\u043B\u0430\u0432\u043D\u043E\u0435 \u0447\u0442\u043E\u0431\u044B
+        \u0442\u043E\u0440\u043C\u043E\u0437\u0430 \u043D\u0435 \u043E\u0442\u043A\u0430\u0437\u0430\u043B\u0438!
+        \u0423\u043B\u0451\u0442!"
+      Happy: "\u0413\u043B\u0430\u0432\u043D\u043E\u0435 \u0447\u0442\u043E\u0431\u044B
+        \u0442\u043E\u0440\u043C\u043E\u0437\u0430 \u043D\u0435 \u043E\u0442\u043A\u0430\u0437\u0430\u043B\u0438!
+        \u0423\u043B\u0451\u0442!"
+    - isImporntant: 0
+      Sad: "\u0412\u0435\u0442\u0435\u0440 \u0440\u0435\u0436\u0435\u0442 \u0433\u043B\u0430\u0437\u0430."
+      Neutral: "\u0412\u0435\u0442\u0435\u0440 \u0440\u0435\u0436\u0435\u0442 \u0433\u043B\u0430\u0437\u0430."
+      Happy: "\u0412\u0435\u0442\u0435\u0440 \u0440\u0435\u0436\u0435\u0442 \u0433\u043B\u0430\u0437\u0430."
+    - isImporntant: 0
+      Sad: "\u0414\u043E\u0440\u043E\u0433\u0430 \u043F\u0435\u0442\u043B\u044F\u0435\u0442,
+        \u0441\u043B\u043E\u0432\u043D\u043E \u0438\u0433\u0440\u0430\u044F \u0441\u043E
+        \u043C\u043D\u043E\u0439."
+      Neutral: "\u0414\u043E\u0440\u043E\u0433\u0430 \u043F\u0435\u0442\u043B\u044F\u0435\u0442,
+        \u0441\u043B\u043E\u0432\u043D\u043E \u0438\u0433\u0440\u0430\u044F \u0441\u043E
+        \u043C\u043D\u043E\u0439."
+      Happy: "\u0414\u043E\u0440\u043E\u0433\u0430 \u043F\u0435\u0442\u043B\u044F\u0435\u0442,
+        \u0441\u043B\u043E\u0432\u043D\u043E \u0438\u0433\u0440\u0430\u044F \u0441\u043E
+        \u043C\u043D\u043E\u0439."
+    - isImporntant: 0
+      Sad: "\u0422\u0443\u043C\u0430\u043D \u043E\u043F\u0443\u0441\u043A\u0430\u0435\u0442\u0441\u044F,
+        \u0441\u043A\u0440\u044B\u0432\u0430\u044F \u0432\u0441\u0435 \u0432\u043E\u043A\u0440\u0443\u0433."
+      Neutral: "\u0422\u0443\u043C\u0430\u043D \u043E\u043F\u0443\u0441\u043A\u0430\u0435\u0442\u0441\u044F,
+        \u0441\u043A\u0440\u044B\u0432\u0430\u044F \u0432\u0441\u0435 \u0432\u043E\u043A\u0440\u0443\u0433."
+      Happy: "\u0422\u0443\u043C\u0430\u043D \u043E\u043F\u0443\u0441\u043A\u0430\u0435\u0442\u0441\u044F,
+        \u0441\u043A\u0440\u044B\u0432\u0430\u044F \u0432\u0441\u0435 \u0432\u043E\u043A\u0440\u0443\u0433."
+    - isImporntant: 0
+      Sad: "\u0412\u0438\u0434\u0435\u043B \u0431\u044B \u043C\u0435\u043D\u044F
+        \u043F\u0430\u043F\u0430."
+      Neutral: "\u0412\u0438\u0434\u0435\u043B \u0431\u044B \u043C\u0435\u043D\u044F
+        \u043F\u0430\u043F\u0430."
+      Happy: "\u0412\u0438\u0434\u0435\u043B \u0431\u044B \u043C\u0435\u043D\u044F
+        \u043F\u0430\u043F\u0430."
+    firstLandscape: {fileID: 11400000, guid: 884b68541c895444c9f1bc01ae44231c, type: 2}
+    firstLandscapeLength: 0.446
+    secondLandscape: {fileID: 11400000, guid: 884b68541c895444c9f1bc01ae44231c, type: 2}
     start: {fileID: 786270578}
     end: {fileID: 1054705959}
-    length: 0
+    length: 10
     firstWeather: 0
-    firstWeatherLength: 0
+    firstWeatherLength: 0.572
     secondWeather: 0
-    firstDirection: 0
-    firstDirectionLength: 0
-    secondDirection: 0
-  - name: 
-    logs: []
-    landscape: {fileID: 0}
+    firstDirection: 1
+    firstDirectionLength: 0.605
+    secondDirection: 1
+  - name: 7_Vpered_k_surice
+    logs:
+    - isImporntant: 0
+      Sad: "\u041C\u043D\u0435 \u043D\u0435 \u0445\u0432\u0430\u0442\u0430\u0435\u0442
+        \u0441\u043E\u043B\u043D\u0446\u0430."
+      Neutral: "\u041C\u043D\u0435 \u043D\u0435 \u0445\u0432\u0430\u0442\u0430\u0435\u0442
+        \u0441\u043E\u043B\u043D\u0446\u0430."
+      Happy: "\u041C\u043D\u0435 \u043D\u0435 \u0445\u0432\u0430\u0442\u0430\u0435\u0442
+        \u0441\u043E\u043B\u043D\u0446\u0430."
+    - isImporntant: 1
+      Sad: "\u041F\u0430\u043F\u0430, \u043F\u043E\u0447\u0435\u043C\u0443 \u0442\u044B
+        \u043D\u0435 \u043E\u0442\u0432\u0435\u0447\u0430\u0435\u0448\u044C? "
+      Neutral: "\u041F\u0430\u043F\u0430, \u0442\u044B \u043C\u0435\u043D\u044F \u0441\u043B\u044B\u0448\u0438\u0448\u044C?
+        \u041E\u0442\u0432\u0435\u0442\u044C."
+      Happy: "\u041F\u0430\u043F\u0430, \u044F \u0437\u043D\u0430\u044E, \u0447\u0442\u043E
+        \u0442\u044B \u0433\u043E\u0440\u0434\u0438\u0448\u044C\u0441\u044F \u043C\u043D\u043E\u0439! "
+    - isImporntant: 0
+      Sad: "\u0423\u0432\u0438\u0434\u0435\u043B\u0430 \u043C\u0443\u0436\u0447\u0438\u043D\u0443,
+        \u0441\u043E\u0431\u0438\u0440\u0430\u044E\u0449\u0435\u0433\u043E \u044F\u0433\u043E\u0434\u044B
+        \u0443 \u0434\u043E\u0440\u043E\u0433\u0438."
+      Neutral: "\u0423\u0432\u0438\u0434\u0435\u043B\u0430 \u043C\u0443\u0436\u0447\u0438\u043D\u0443,
+        \u0441\u043E\u0431\u0438\u0440\u0430\u044E\u0449\u0435\u0433\u043E \u044F\u0433\u043E\u0434\u044B
+        \u0443 \u0434\u043E\u0440\u043E\u0433\u0438."
+      Happy: "\u0423\u0432\u0438\u0434\u0435\u043B\u0430 \u043C\u0443\u0436\u0447\u0438\u043D\u0443,
+        \u0441\u043E\u0431\u0438\u0440\u0430\u044E\u0449\u0435\u0433\u043E \u044F\u0433\u043E\u0434\u044B
+        \u0443 \u0434\u043E\u0440\u043E\u0433\u0438."
+    - isImporntant: 0
+      Sad: "\u041D\u0435 \u0445\u043E\u0447\u0443 \u0432\u043E\u0437\u0432\u0440\u0430\u0449\u0430\u0442\u044C\u0441\u044F
+        \u0434\u043E\u043C\u043E\u0439."
+      Neutral: "\u041D\u0435 \u0445\u043E\u0447\u0443 \u0432\u043E\u0437\u0432\u0440\u0430\u0449\u0430\u0442\u044C\u0441\u044F
+        \u0434\u043E\u043C\u043E\u0439."
+      Happy: "\u041D\u0435 \u0445\u043E\u0447\u0443 \u0432\u043E\u0437\u0432\u0440\u0430\u0449\u0430\u0442\u044C\u0441\u044F
+        \u0434\u043E\u043C\u043E\u0439."
+    - isImporntant: 0
+      Sad: "\u0420\u0435\u043A\u0430 \u0431\u0443\u0440\u043B\u0438\u0442 \u0438
+        \u0432\u043D\u0443\u0448\u0430\u0435\u0442 \u0442\u0440\u0435\u0432\u043E\u0433\u0443."
+      Neutral: "\u0420\u0435\u043A\u0430 \u0431\u0443\u0440\u043B\u0438\u0442 \u0438
+        \u0432\u043D\u0443\u0448\u0430\u0435\u0442 \u0442\u0440\u0435\u0432\u043E\u0433\u0443."
+      Happy: "\u0420\u0435\u043A\u0430 \u0431\u0443\u0440\u043B\u0438\u0442 \u0438
+        \u0432\u043D\u0443\u0448\u0430\u0435\u0442 \u0442\u0440\u0435\u0432\u043E\u0433\u0443."
+    - isImporntant: 1
+      Sad: "\u041F\u0430\u043F\u0430, \u0442\u044B \u0432\u0441\u0435 \u0432\u0440\u0435\u043C\u044F
+        \u043C\u043E\u043B\u0447\u0438\u0448\u044C. ."
+      Neutral: "\u041F\u0430\u043F\u0430, \u0441\u043A\u0430\u0436\u0438, \u0442\u044B
+        \u043B\u044E\u0431\u0438\u043B \u043C\u0430\u043C\u0443? \u0422\u043E\u043B\u044C\u043A\u043E
+        \u0447\u0435\u0441\u0442\u043D\u043E."
+      Happy: "\u041F\u0430\u043F\u0430, \u0432\u043E\u0442 \u0431\u044B \u0441 \u0442\u043E\u0431\u043E\u0439
+        \u0432\u0441\u0435\u0441\u0442\u0435 \u043F\u0440\u043E\u043A\u0430\u0442\u0438\u0442\u044C\u0441\u044F
+        \u043D\u0430 \u0432\u0435\u043B\u043E\u0441\u0438\u043F\u0435\u0434\u0430\u0445."
+    - isImporntant: 0
+      Sad: "\u0414\u0435\u043D\u044C \u043F\u0443\u0442\u0438, \u0430 \u043C\u0438\u0440
+        \u0443\u0436\u0435 \u043D\u0435 \u0443\u0437\u043D\u0430\u0442\u044C \u0432\u043E\u0432\u0441\u0435."
+      Neutral: "\u0414\u0435\u043D\u044C \u043F\u0443\u0442\u0438, \u0430 \u043C\u0438\u0440
+        \u0443\u0436\u0435 \u043D\u0435 \u0443\u0437\u043D\u0430\u0442\u044C \u0432\u043E\u0432\u0441\u0435."
+      Happy: "\u0414\u0435\u043D\u044C \u043F\u0443\u0442\u0438, \u0430 \u043C\u0438\u0440
+        \u0443\u0436\u0435 \u043D\u0435 \u0443\u0437\u043D\u0430\u0442\u044C \u0432\u043E\u0432\u0441\u0435."
+    - isImporntant: 0
+      Sad: "\u041F\u0440\u043E\u0441\u043B\u044B\u0448\u0430\u043B\u0441\u044F \u0448\u043E\u0440\u043E\u0445
+        \u0432 \u043B\u0435\u0441\u0443, \u043D\u043E \u043D\u0438\u043A\u043E\u0433\u043E
+        \u043D\u0435 \u0432\u0438\u0434\u043D\u043E."
+      Neutral: "\u041F\u0440\u043E\u0441\u043B\u044B\u0448\u0430\u043B\u0441\u044F
+        \u0448\u043E\u0440\u043E\u0445 \u0432 \u043B\u0435\u0441\u0443, \u043D\u043E
+        \u043D\u0438\u043A\u043E\u0433\u043E \u043D\u0435 \u0432\u0438\u0434\u043D\u043E."
+      Happy: "\u041F\u0440\u043E\u0441\u043B\u044B\u0448\u0430\u043B\u0441\u044F
+        \u0448\u043E\u0440\u043E\u0445 \u0432 \u043B\u0435\u0441\u0443, \u043D\u043E
+        \u043D\u0438\u043A\u043E\u0433\u043E \u043D\u0435 \u0432\u0438\u0434\u043D\u043E."
+    - isImporntant: 0
+      Sad: "\u041A\u0430\u043A \u044F \u0434\u043E\u043A\u0442\u0438\u043B\u0430\u0441\u044C
+        \u0434\u043E \u0436\u0438\u0437\u043D\u0438 \u0442\u0430\u043A\u043E\u0439?
+        \u0425\u0435\u0445."
+      Neutral: "\u041A\u0430\u043A \u044F \u0434\u043E\u043A\u0442\u0438\u043B\u0430\u0441\u044C
+        \u0434\u043E \u0436\u0438\u0437\u043D\u0438 \u0442\u0430\u043A\u043E\u0439?
+        \u0425\u0435\u0445."
+      Happy: "\u041A\u0430\u043A \u044F \u0434\u043E\u043A\u0442\u0438\u043B\u0430\u0441\u044C
+        \u0434\u043E \u0436\u0438\u0437\u043D\u0438 \u0442\u0430\u043A\u043E\u0439?
+        \u0425\u0435\u0445."
+    firstLandscape: {fileID: 11400000, guid: 6c714d5c6d648b04f97670a58a521ea5, type: 2}
+    firstLandscapeLength: 0.5
+    secondLandscape: {fileID: 11400000, guid: affca2bbfccb4ee4892ebbb17f0cb3e5, type: 2}
     start: {fileID: 1054705959}
     end: {fileID: 1786976163}
-    length: 0
-    firstWeather: 0
-    firstWeatherLength: 0
-    secondWeather: 0
-    firstDirection: 0
-    firstDirectionLength: 0
-    secondDirection: 0
-  - name: 
-    logs: []
-    landscape: {fileID: 0}
+    length: 30
+    firstWeather: 2
+    firstWeatherLength: 0.5
+    secondWeather: 2
+    firstDirection: 1
+    firstDirectionLength: 0.5
+    secondDirection: 1
+  - name: 8_k_Ozeru_Guya
+    logs:
+    - isImporntant: 0
+      Sad: "\u0421\u043E\u043B\u043D\u0446\u0435 \u043E\u0441\u043B\u0435\u043F\u0438\u043B\u043E
+        \u0441\u043A\u0432\u043E\u0437\u044C \u0432\u0435\u0442\u043A\u0438"
+      Neutral: "\u0421\u043E\u043B\u043D\u0446\u0435 \u043E\u0441\u043B\u0435\u043F\u0438\u043B\u043E
+        \u0441\u043A\u0432\u043E\u0437\u044C \u0432\u0435\u0442\u043A\u0438"
+      Happy: "\u0421\u043E\u043B\u043D\u0446\u0435 \u043E\u0441\u043B\u0435\u043F\u0438\u043B\u043E
+        \u0441\u043A\u0432\u043E\u0437\u044C \u0432\u0435\u0442\u043A\u0438"
+    - isImporntant: 0
+      Sad: "\u0414\u043E\u0440\u043E\u0433\u0430 \u043A\u0430\u043A \u0432 \u0441\u043A\u0430\u0437\u043A\u0435
+        \u0432\u043D\u0435\u0437\u0430\u043F\u043D\u043E \u0438\u0441\u0447\u0435\u0437\u0430\u0435\u0442
+        \u0438 \u043F\u043E\u044F\u0432\u043B\u044F\u0435\u0442\u0441\u044F \u0441\u043D\u043E\u0432\u0430."
+      Neutral: "\u0414\u043E\u0440\u043E\u0433\u0430 \u043A\u0430\u043A \u0432 \u0441\u043A\u0430\u0437\u043A\u0435
+        \u0432\u043D\u0435\u0437\u0430\u043F\u043D\u043E \u0438\u0441\u0447\u0435\u0437\u0430\u0435\u0442
+        \u0438 \u043F\u043E\u044F\u0432\u043B\u044F\u0435\u0442\u0441\u044F \u0441\u043D\u043E\u0432\u0430."
+      Happy: "\u0414\u043E\u0440\u043E\u0433\u0430 \u043A\u0430\u043A \u0432 \u0441\u043A\u0430\u0437\u043A\u0435
+        \u0432\u043D\u0435\u0437\u0430\u043F\u043D\u043E \u0438\u0441\u0447\u0435\u0437\u0430\u0435\u0442
+        \u0438 \u043F\u043E\u044F\u0432\u043B\u044F\u0435\u0442\u0441\u044F \u0441\u043D\u043E\u0432\u0430."
+    - isImporntant: 0
+      Sad: "\u042D\u0442\u043E \u0447\u0442\u043E \u0431\u044B\u043B \u043C\u0435\u0434\u0432\u0435\u0434\u044C?!!!"
+      Neutral: "\u042D\u0442\u043E \u0447\u0442\u043E \u0431\u044B\u043B \u043C\u0435\u0434\u0432\u0435\u0434\u044C?!!!"
+      Happy: "\u042D\u0442\u043E \u0447\u0442\u043E \u0431\u044B\u043B \u043C\u0435\u0434\u0432\u0435\u0434\u044C?!!!"
+    - isImporntant: 0
+      Sad: "\u041F\u0435\u0434\u0430\u043B\u044C \u0437\u0430\u0435\u0434\u0430\u0435\u0442
+        \u043A\u0430\u0436\u0434\u044B\u0435 \u043D\u0435\u0441\u043A\u043E\u043B\u044C\u043A\u043E
+        \u043C\u0435\u0442\u0440\u043E\u0432. \u0420\u0430\u0437\u0434\u0430\u0440\u0430\u0436\u0435\u0442."
+      Neutral: "\u041F\u0435\u0434\u0430\u043B\u044C \u0437\u0430\u0435\u0434\u0430\u0435\u0442
+        \u043A\u0430\u0436\u0434\u044B\u0435 \u043D\u0435\u0441\u043A\u043E\u043B\u044C\u043A\u043E
+        \u043C\u0435\u0442\u0440\u043E\u0432. \u0420\u0430\u0437\u0434\u0430\u0440\u0430\u0436\u0435\u0442."
+      Happy: "\u041F\u0435\u0434\u0430\u043B\u044C \u0437\u0430\u0435\u0434\u0430\u0435\u0442
+        \u043A\u0430\u0436\u0434\u044B\u0435 \u043D\u0435\u0441\u043A\u043E\u043B\u044C\u043A\u043E
+        \u043C\u0435\u0442\u0440\u043E\u0432. \u0420\u0430\u0437\u0434\u0430\u0440\u0430\u0436\u0435\u0442."
+    - isImporntant: 1
+      Sad: "\u041A\u043E\u0433\u0434\u0430 \u0442\u044B \u0443\u043C\u0435\u0440,
+        \u044F \u0432\u043E\u0437\u043D\u0435\u043D\u0430\u0432\u0438\u0434\u0435\u043B\u0430
+        \u043C\u0430\u043C\u0443."
+      Neutral: "\u041A\u043E\u0433\u0434\u0430 \u0442\u044B \u0443\u043C\u0435\u0440,
+        \u044F \u043F\u043E\u043E\u0431\u0435\u0449\u0430\u043B\u0430, \u0447\u0442\u043E
+        \u0431\u043E\u043B\u044C\u0448\u0435 \u043D\u0435 \u0441\u043A\u0430\u0436\u0443
+        \u043D\u0438 \u0441\u043B\u043E\u0432\u0430. \u041D\u0435 \u0432\u044B\u0448\u043B\u043E."
+      Happy: "\u041A\u043E\u0433\u0434\u0430 \u0442\u044B \u0443\u043C\u0435\u0440,
+        \u044F \u043D\u0435 \u043C\u043E\u0433\u043B\u0430 \u043F\u043B\u0430\u043A\u0430\u0442\u044C.
+        \u041D\u0435 \u0445\u043E\u0442\u0435\u043B\u0430 \u0442\u0435\u0431\u044F
+        \u0440\u0430\u0441\u0441\u0442\u0440\u0430\u0438\u0432\u0430\u0442\u044C.."
+    - isImporntant: 0
+      Sad: "\u0412\u0435\u0442\u0435\u0440 \u0448\u0435\u043F\u0447\u0435\u0442 \u0447\u0442\u043E-\u0442\u043E
+        \u043D\u0435\u043F\u043E\u043D\u044F\u0442\u043D\u043E\u0435."
+      Neutral: "\u0412\u0435\u0442\u0435\u0440 \u0448\u0435\u043F\u0447\u0435\u0442
+        \u0447\u0442\u043E-\u0442\u043E \u043D\u0435\u043F\u043E\u043D\u044F\u0442\u043D\u043E\u0435."
+      Happy: "\u0412\u0435\u0442\u0435\u0440 \u0448\u0435\u043F\u0447\u0435\u0442
+        \u0447\u0442\u043E-\u0442\u043E \u043D\u0435\u043F\u043E\u043D\u044F\u0442\u043D\u043E\u0435."
+    firstLandscape: {fileID: 11400000, guid: affca2bbfccb4ee4892ebbb17f0cb3e5, type: 2}
+    firstLandscapeLength: 0.8
+    secondLandscape: {fileID: 11400000, guid: ee8a98e3988a2c64b944a85fb9ecf301, type: 2}
+    start: {fileID: 286563712}
+    end: {fileID: 1583835544}
+    length: 15
+    firstWeather: 1
+    firstWeatherLength: 0.8
+    secondWeather: 1
+    firstDirection: 2
+    firstDirectionLength: 0.8
+    secondDirection: 2
+  - name: 9_Ozero_Guya
+    logs:
+    - isImporntant: 0
+      Sad: "\u041E\u0442 \u043E\u0437\u0435\u0440\u0430 \u0432\u0435\u0435\u0442
+        \u0441\u043F\u043E\u043A\u043E\u0439\u0441\u0442\u0432\u0438\u0435\u043C. "
+      Neutral: "\u041E\u0442 \u043E\u0437\u0435\u0440\u0430 \u0432\u0435\u0435\u0442
+        \u0441\u043F\u043E\u043A\u043E\u0439\u0441\u0442\u0432\u0438\u0435\u043C. "
+      Happy: "\u041E\u0442 \u043E\u0437\u0435\u0440\u0430 \u0432\u0435\u0435\u0442
+        \u0441\u043F\u043E\u043A\u043E\u0439\u0441\u0442\u0432\u0438\u0435\u043C. "
+    - isImporntant: 0
+      Sad: "\u0423\u0441\u0442\u0430\u043B\u043E\u0441\u0442\u044C \u043E\u0442\u0441\u0442\u0443\u043F\u0438\u043B\u0430.  "
+      Neutral: "\u0423\u0441\u0442\u0430\u043B\u043E\u0441\u0442\u044C \u043E\u0442\u0441\u0442\u0443\u043F\u0438\u043B\u0430.  "
+      Happy: "\u0423\u0441\u0442\u0430\u043B\u043E\u0441\u0442\u044C \u043E\u0442\u0441\u0442\u0443\u043F\u0438\u043B\u0430.  "
+    - isImporntant: 1
+      Sad: "\u0411\u0430\u0431\u0443\u0448\u043A\u0430, \u044F \u043D\u0435 \u0445\u043E\u0447\u0443
+        \u0447\u0442\u043E\u0431\u044B \u0442\u044B \u0443\u043C\u0438\u0440\u0430\u043B\u0430."
+      Neutral: "\u0411\u0430\u0431\u0443\u0448\u043A\u0430, \u044F \u043D\u0435 \u0445\u043E\u0447\u0443
+        \u0447\u0442\u043E\u0431\u044B \u0442\u044B \u0443\u043C\u0438\u0440\u0430\u043B\u0430."
+      Happy: "\u0411\u0430\u0431\u0443\u0448\u043A\u0430, \u044F \u043D\u0435 \u0445\u043E\u0447\u0443
+        \u0447\u0442\u043E\u0431\u044B \u0442\u044B \u0443\u043C\u0438\u0440\u0430\u043B\u0430."
+    - isImporntant: 0
+      Sad: "\u0416\u0430\u043B\u044C \u0432 \u044D\u0442\u043E\u043C \u043E\u0437\u0435\u0440\u0435
+        \u043D\u0435 \u0432\u043E\u0434\u044F\u0442\u0441\u044F \u043A\u0438\u0442\u044B."
+      Neutral: "\u0416\u0430\u043B\u044C \u0432 \u044D\u0442\u043E\u043C \u043E\u0437\u0435\u0440\u0435
+        \u043D\u0435 \u0432\u043E\u0434\u044F\u0442\u0441\u044F \u043A\u0438\u0442\u044B."
+      Happy: "\u0416\u0430\u043B\u044C \u0432 \u044D\u0442\u043E\u043C \u043E\u0437\u0435\u0440\u0435
+        \u043D\u0435 \u0432\u043E\u0434\u044F\u0442\u0441\u044F \u043A\u0438\u0442\u044B."
+    - isImporntant: 1
+      Sad: "\u041F\u0430\u043F\u0430. \u041C\u043E\u0439 \u043B\u044E\u0431\u0438\u043C\u044B\u0439,
+        \u043F\u0430\u043F\u043E\u0447\u043A\u0430 (\u043F\u043B\u0430\u0447\u0435\u0442) "
+      Neutral: "\u041F\u0430\u043F\u0430. \u041C\u043E\u0439 \u043B\u044E\u0431\u0438\u043C\u044B\u0439,
+        \u043F\u0430\u043F\u043E\u0447\u043A\u0430 (\u043F\u043B\u0430\u0447\u0435\u0442) "
+      Happy: "\u041F\u0430\u043F\u0430. \u041C\u043E\u0439 \u043B\u044E\u0431\u0438\u043C\u044B\u0439,
+        \u043F\u0430\u043F\u043E\u0447\u043A\u0430 (\u043F\u043B\u0430\u0447\u0435\u0442) "
+    - isImporntant: 0
+      Sad: "\u042F \u0432\u0441\u043F\u043E\u043C\u0438\u043D\u0430\u044E \u044D\u0442\u0443
+        \u043C\u0435\u0441\u0442\u043D\u043E\u0441\u0442\u044C, \u043C\u044B \u0442\u0443\u0442
+        \u0431\u044B\u043B\u0438 \u0432 \u0434\u0435\u0441\u0442\u0432\u0435."
+      Neutral: "\u042F \u0432\u0441\u043F\u043E\u043C\u0438\u043D\u0430\u044E \u044D\u0442\u0443
+        \u043C\u0435\u0441\u0442\u043D\u043E\u0441\u0442\u044C, \u043C\u044B \u0442\u0443\u0442
+        \u0431\u044B\u043B\u0438 \u0432 \u0434\u0435\u0441\u0442\u0432\u0435."
+      Happy: "\u042F \u0432\u0441\u043F\u043E\u043C\u0438\u043D\u0430\u044E \u044D\u0442\u0443
+        \u043C\u0435\u0441\u0442\u043D\u043E\u0441\u0442\u044C, \u043C\u044B \u0442\u0443\u0442
+        \u0431\u044B\u043B\u0438 \u0432 \u0434\u0435\u0441\u0442\u0432\u0435."
+    - isImporntant: 0
+      Sad: "\u042F \u0441\u043A\u043E\u0440\u043E \u0431\u0443\u0434\u0443 \u043D\u0430
+        \u043C\u0435\u0441\u0442\u0435. \u0411\u0430\u0431\u0443\u0448\u043A\u0430,
+        \u044F \u0435\u0434\u0443!"
+      Neutral: "\u042F \u0441\u043A\u043E\u0440\u043E \u0431\u0443\u0434\u0443 \u043D\u0430
+        \u043C\u0435\u0441\u0442\u0435. \u0411\u0430\u0431\u0443\u0448\u043A\u0430,
+        \u044F \u0435\u0434\u0443!"
+      Happy: "\u042F \u0441\u043A\u043E\u0440\u043E \u0431\u0443\u0434\u0443 \u043D\u0430
+        \u043C\u0435\u0441\u0442\u0435. \u0411\u0430\u0431\u0443\u0448\u043A\u0430,
+        \u044F \u0435\u0434\u0443!"
+    - isImporntant: 1
+      Sad: "\u041F\u0430\u043F\u0430, \u044F \u0434\u043E\u0435\u0445\u0430\u043B\u0430! "
+      Neutral: "\u041F\u0430\u043F\u0430, \u044F \u0434\u043E\u0435\u0445\u0430\u043B\u0430!
+        \u0421\u043F\u0430\u0441\u0438\u0431\u043E \u0442\u0435\u0431\u0435!"
+      Happy: "\u041F\u0430\u043F\u0430, \u044F \u0434\u043E\u0435\u0445\u0430\u043B\u0430!
+        \u041B\u044E\u0431\u043B\u044E \u0442\u0435\u0431\u044F!"
+    firstLandscape: {fileID: 11400000, guid: ee8a98e3988a2c64b944a85fb9ecf301, type: 2}
+    firstLandscapeLength: 0.428
+    secondLandscape: {fileID: 11400000, guid: ee8a98e3988a2c64b944a85fb9ecf301, type: 2}
     start: {fileID: 1786976163}
     end: {fileID: 1218041599}
-    length: 0
-    firstWeather: 0
-    firstWeatherLength: 0
-    secondWeather: 0
-    firstDirection: 0
-    firstDirectionLength: 0
-    secondDirection: 0
+    length: 20
+    firstWeather: 1
+    firstWeatherLength: 0.361
+    secondWeather: 1
+    firstDirection: 2
+    firstDirectionLength: 0.434
+    secondDirection: 2
   _spacingLength: 0.2
   _dotPrefab: {fileID: 1632984216819298127, guid: cadb4fad2478563499e8c483132fec12, type: 3}
   _maxEnergy: 100
@@ -5276,8 +5727,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: <color=green>1
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 5babab7f450b5624e82d9395f80d085d, type: 2}
-  m_sharedMaterial: {fileID: 155390346693983968, guid: 5babab7f450b5624e82d9395f80d085d, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -5877,8 +6328,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Day <color=green>0 </color>
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 4eba2fdcaa7b38f468b46d450b938a00, type: 2}
-  m_sharedMaterial: {fileID: 1470213754778730180, guid: 4eba2fdcaa7b38f468b46d450b938a00, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -5902,7 +6353,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 63.55
+  m_fontSize: 51.45
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -6143,8 +6594,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: <color=green>00:00</color>
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 4eba2fdcaa7b38f468b46d450b938a00, type: 2}
-  m_sharedMaterial: {fileID: 1470213754778730180, guid: 4eba2fdcaa7b38f468b46d450b938a00, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -6168,7 +6619,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 45.2
+  m_fontSize: 36.55
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -6598,8 +7049,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: <color=green>0</color>km
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 4eba2fdcaa7b38f468b46d450b938a00, type: 2}
-  m_sharedMaterial: {fileID: 1470213754778730180, guid: 4eba2fdcaa7b38f468b46d450b938a00, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -6623,7 +7074,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 45.2
+  m_fontSize: 36.55
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -6732,8 +7183,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Map
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 63f07beeb69f0544d8faaee347a02f4e, type: 2}
-  m_sharedMaterial: {fileID: -6737674178951081815, guid: 63f07beeb69f0544d8faaee347a02f4e, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -6757,7 +7208,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 40.35
+  m_fontSize: 22.85
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
