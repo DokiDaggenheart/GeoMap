@@ -85,6 +85,7 @@ namespace SceneSystem
             scene.character2Image = (Sprite)EditorGUILayout.ObjectField("Character 2 Image", scene.character2Image, typeof(Sprite), false);
             scene.speakingCharacter = EditorGUILayout.Popup("Speaking Character", scene.speakingCharacter, new string[] { "Character 1", "Character 2" });
             scene.isChoiceScene = EditorGUILayout.Toggle("Is Choice Scene", scene.isChoiceScene);
+            scene.isEndScene = EditorGUILayout.Toggle("Is End Scene", scene.isEndScene);
             if (scene.isChoiceScene)
             {
                 scene.choice1Text = EditorGUILayout.TextField("Choice 1 Text", scene.choice1Text);

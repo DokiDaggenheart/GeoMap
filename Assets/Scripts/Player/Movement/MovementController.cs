@@ -104,7 +104,9 @@ public class MovementController : MonoBehaviour
 
     public string GetCurrentSpeed()
     {
-        string currentSpeed = _movementModel.totalVelocity + " km/h";
+        int roundedSpeed = (int)Math.Floor(_movementModel.totalVelocity);
+        string currentSpeed =  roundedSpeed + " km/h";
+        Debug.Log("current speed" + currentSpeed);
         return currentSpeed;
     }
 
@@ -112,5 +114,28 @@ public class MovementController : MonoBehaviour
     {
         string currentTemperaure = _temperatureModel.currentTemperature + " °C";
         return currentTemperaure;
+    }
+
+    public string GetCurrentNameOfSpace()
+    {
+        string currentNameOfSpace = _pathModel.pathList[pathSectionIndex].name;
+        return currentNameOfSpace;
+    }
+    
+    public string GetCurrentLandscapeName()
+    {
+        string currentLandscapeName = GetCurrentLandscape().name;
+        return currentLandscapeName;
+    }
+
+    public string GetCurrentDirection()
+    {
+        string direction;
+        if (_movementModel.progress < _pathModel.pathList[pathSectionIndex].firstDirectionLength)
+            direction = _pathModel.pathList[pathSectionIndex].firstDirection.ToString();
+        else
+            direction = _pathModel.pathList[pathSectionIndex].secondDirection.ToString(); ;
+
+        return direction;
     }
 }

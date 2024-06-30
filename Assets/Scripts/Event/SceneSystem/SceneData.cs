@@ -14,6 +14,7 @@ namespace SceneSystem
         public Sprite character2Image;
         public int speakingCharacter;
         public SceneData nextScene;
+        public bool isEndScene;
         public bool isChoiceScene;
         public string choice1Text;
         public SceneData choice1Scene;
