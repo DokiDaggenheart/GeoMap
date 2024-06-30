@@ -12,7 +12,7 @@ public class TimeModel
     public int timeInGameOff;
     public int timeInRealLifeOff;
 
-    public int gameHours = 0;
+    public int gameHours = 5;
     public int gameMinutes = 0;
     public int gameDays = 0;
 

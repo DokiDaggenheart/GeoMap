@@ -15,6 +15,6 @@ public class EnergyView : MonoBehaviour
     private void Update()
     {
         currentEnergy = Convert.ToInt32(_energyModel.energy);
-        text.text = "<color=green>" + currentEnergy + "%";
+        text.text = currentEnergy + "%";
     }
 }

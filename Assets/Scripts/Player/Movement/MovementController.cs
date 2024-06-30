@@ -16,6 +16,8 @@ public class MovementController : MonoBehaviour
     [Inject] private WeatherModel _weatherModel;
     [Inject] private TemperatureModel _temperatureModel;
 
+    private float distanceTraveled;
+
     private void Start()
     {
         _logSystem.SetLogList(_pathModel.pathList[pathSectionIndex]);
@@ -36,6 +38,8 @@ public class MovementController : MonoBehaviour
             gameObject.transform.position = Vector2.Lerp(_pathModel.pathList[pathSectionIndex].start.position, _pathModel.pathList[pathSectionIndex].end.position, _movementModel.progress);
             _movementModel.progress += (_movementModel.totalVelocity / _pathModel.pathList[pathSectionIndex].length) * (Time.deltaTime*_timeController.timeScale / 3600);
             _energyModel.energy -= _energyModel.energyDiminution * _moodController.MoodMultiplier() * (Time.deltaTime*_timeController.timeScale / 60);
+
+            distanceTraveled += _movementModel.totalVelocity * (Time.deltaTime * _timeController.timeScale / 3600);
 
             if (_movementModel.progress < _pathModel.pathList[pathSectionIndex].firstWeatherLength)
                 _weatherModel.ChangeWeather(_pathModel.pathList[pathSectionIndex].firstWeather);
@@ -143,5 +147,12 @@ public class MovementController : MonoBehaviour
     {
         string currentMood = _moodController.GetCurrentMoodState().ToString();
         return currentMood;
+    }
+
+    public string GetTravelledDistance()
+    {
+        int distance = (int)Math.Floor(distanceTraveled);
+        string travelledDistance = distance + " km";
+        return travelledDistance;
     }
 }

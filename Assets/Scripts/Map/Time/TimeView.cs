@@ -11,7 +11,13 @@ public class TimeView : MonoBehaviour
     [Inject] TimeModel _timeModel;
     private float time;
     public TextMeshProUGUI timerText;
+    public TextMeshProUGUI timeOfDayText;
+    public TextMeshProUGUI dayText;
 
+    private void Start()
+    {
+        UpdateTimeOfDayText();
+    }
     private void Update()
     {
         time += Time.deltaTime * _timeController.timeScale;
@@ -22,18 +28,30 @@ public class TimeView : MonoBehaviour
             {
                 _timeModel.gameMinutes = 0;
                 _timeModel.gameHours++;
+                UpdateTimeOfDayText();
                 if (_timeModel.gameHours >= 24)
                 {
                     _timeModel.gameHours = 0;
                     _timeModel.gameDays++;
+                    UpdateDayText();
                 }
             }
             UpdateTimerText();
             time = 0;
         }
     }
-    void UpdateTimerText()
+    private void UpdateTimerText()
     {
         timerText.text = _timeModel.CurrentTime();
+    }
+
+    private void UpdateDayText()
+    {
+        dayText.text = "Day " + _timeModel.gameDays;
+    }
+
+    private void UpdateTimeOfDayText()
+    {
+        timeOfDayText.text = _timeModel.GetCurrentTimeOfDay().ToString();
     }
 }
