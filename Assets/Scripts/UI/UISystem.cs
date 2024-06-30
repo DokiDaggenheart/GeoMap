@@ -14,6 +14,7 @@ public class UISystem : MonoBehaviour
     [SerializeField] private TextMeshProUGUI nameOfSpaceText;
     [SerializeField] private TextMeshProUGUI landscapeText;
     [SerializeField] private TextMeshProUGUI directionText;
+    [SerializeField] private TextMeshProUGUI moodText;
     [SerializeField] private Image weatherIcon;
 
     private void Update()
@@ -23,6 +24,7 @@ public class UISystem : MonoBehaviour
         nameOfSpaceText.text = _movementController.GetCurrentNameOfSpace();
         landscapeText.text = _movementController.GetCurrentLandscapeName();
         directionText.text = _movementController.GetCurrentDirection();
+
 
     }
 }

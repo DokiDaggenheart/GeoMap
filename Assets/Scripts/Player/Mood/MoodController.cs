@@ -44,5 +44,8 @@ public class MoodController : MonoBehaviour
         return multiplier;
     }
 
-
+    public MoodState GetCurrentMoodState()
+    {
+        return _moodModel.moodState;
+    }
 }

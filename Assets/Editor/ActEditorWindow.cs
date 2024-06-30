@@ -92,7 +92,7 @@ namespace SceneSystem
                 EditorGUILayout.LabelField("Choice1 Scene");
                 try
                 {
-                    EditorGUILayout.LabelField(scene.choice1Scene.name);
+                    EditorGUILayout.LabelField(scene.choice1Scene);
                 }
                 catch
                 {
@@ -100,7 +100,7 @@ namespace SceneSystem
                 }
                 if (GUILayout.Button("SetScene1"))
                 {
-                    scene.choice1Scene = selectedScene;
+                    scene.choice1Scene = selectedScene.name;
                     selectedScene = null;
                 }
 
@@ -108,7 +108,7 @@ namespace SceneSystem
                 EditorGUILayout.LabelField("Choice2 Scene");
                 try
                 {
-                    EditorGUILayout.LabelField(scene.choice2Scene.name);
+                    EditorGUILayout.LabelField(scene.choice2Scene);
                 }
                 catch
                 {
@@ -116,7 +116,7 @@ namespace SceneSystem
                 }
                 if (GUILayout.Button("SetScene2"))
                 {
-                    scene.choice2Scene = selectedScene;
+                    scene.choice2Scene = selectedScene.name;
                     selectedScene = null;
                 }
             }
@@ -125,7 +125,7 @@ namespace SceneSystem
                 EditorGUILayout.LabelField("NextScene");
                 try
                 {
-                    EditorGUILayout.LabelField(scene.nextScene.name);
+                    EditorGUILayout.LabelField(scene.nextScene);
                 }
                 catch
                 {
@@ -133,7 +133,7 @@ namespace SceneSystem
                 }
                 if (GUILayout.Button("SetScene"))
                 {
-                    scene.nextScene = selectedScene;
+                    scene.nextScene = selectedScene.name;
                     selectedScene = null;
                 }
             }

@@ -13,13 +13,13 @@ namespace SceneSystem
         public Sprite character1Image;
         public Sprite character2Image;
         public int speakingCharacter;
-        public SceneData nextScene;
+        public string nextScene;
         public bool isEndScene;
         public bool isChoiceScene;
         public string choice1Text;
-        public SceneData choice1Scene;
+        public string choice1Scene;
         public string choice2Text;
-        public SceneData choice2Scene;
+        public string choice2Scene;
         public Button deleteButton;
     }
     [System.Serializable]

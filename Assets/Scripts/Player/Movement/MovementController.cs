@@ -138,4 +138,10 @@ public class MovementController : MonoBehaviour
 
         return direction;
     }
+
+    public string GetCurrentMood()
+    {
+        string currentMood = _moodController.GetCurrentMoodState().ToString();
+        return currentMood;
+    }
 }
