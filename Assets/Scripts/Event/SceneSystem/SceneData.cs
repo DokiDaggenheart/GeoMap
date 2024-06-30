@@ -33,6 +33,7 @@ namespace SceneSystem
     public class ActData
     {
         public string name;
+        public Sprite backgroundImage;
         public string firstCharacterName;
         public string secondCharacterName;
         public List<SceneData> scenes = new List<SceneData>();

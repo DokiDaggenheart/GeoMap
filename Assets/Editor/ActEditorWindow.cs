@@ -24,6 +24,7 @@ namespace SceneSystem
             GUILayout.Label("Act Editor for Visual Novel", EditorStyles.boldLabel);
 
             actData.name = EditorGUILayout.TextField("Act Name", actData.name);
+            actData.backgroundImage = (Sprite)EditorGUILayout.ObjectField("Background Image", actData.backgroundImage, typeof(Sprite), false);
             EditorGUILayout.BeginHorizontal();
             actData.firstCharacterName = EditorGUILayout.TextField("First Character Name", actData.firstCharacterName);
             actData.secondCharacterName = EditorGUILayout.TextField("Second Character Name", actData.secondCharacterName);
