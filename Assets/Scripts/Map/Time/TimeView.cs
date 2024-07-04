@@ -18,6 +18,8 @@ public class TimeView : MonoBehaviour
         time += Time.deltaTime * _timeController.timeScale;
         if(time >= 60)
         {
+            time = 0;
+            Debug.Log("minutes++");
             _timeModel.gameMinutes++;
             if (_timeModel.gameMinutes >= 60)
             {
@@ -32,7 +34,6 @@ public class TimeView : MonoBehaviour
                 }
             }
             UpdateTimerText();
-            time = 0;
         }
     }
     private void UpdateTimerText()
