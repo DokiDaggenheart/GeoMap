@@ -4762,7 +4762,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _pathList:
-  - name: "1_\u041E\u043A\u0440\u0430\u0438\u043D\u044B \u0416\u0438\u0442\u043D\u0438\u0446\u044B"
+  - name: "\u041E\u043A\u0440\u0430\u0438\u043D\u044B \u0416\u0438\u0442\u043D\u0438\u0446\u044B"
     logs:
     - isImporntant: 1
       Sad: "\u041C\u0430\u043C\u0430, \u043F\u0440\u043E\u0449\u0430\u0439! "
@@ -4856,7 +4856,7 @@ MonoBehaviour:
     firstDirection: 2
     firstDirectionLength: 0.514
     secondDirection: 2
-  - name: "2_\u041C\u043E\u0441\u0442 \u0447\u0435\u0440\u0435\u0437 \u0413\u0440\u0430\u043D\u0438\u0447\u043A\u0443"
+  - name: "\u0427\u0435\u0440\u0435\u0437 \u0440. \u0413\u0440\u0430\u043D\u0438\u0446\u043A\u0430"
     logs:
     - isImporntant: 1
       Sad: "\u0421\u043E\u043B\u043D\u0446\u0435 \u0432\u044B\u0445\u043E\u0434\u0438\u0442
@@ -4907,7 +4907,7 @@ MonoBehaviour:
     firstDirection: 2
     firstDirectionLength: 0.556
     secondDirection: 2
-  - name: "3_\u041E\u043A\u0440\u0430\u0438\u043D\u044B \u041A\u0443\u0440\u043B\u043E\u0432\u0430"
+  - name: "\u041E\u043A\u0440\u0430\u0438\u043D\u044B \u041A\u0443\u0440\u043B\u043E\u0432\u0430"
     logs:
     - isImporntant: 0
       Sad: "\u041D\u0430\u0447\u0438\u043D\u0430\u0435\u0442\u0441 \u043F\u043E\u0434\u044A\u0435\u043C,
@@ -4983,7 +4983,7 @@ MonoBehaviour:
     firstDirection: 0
     firstDirectionLength: 0.66
     secondDirection: 2
-  - name: "4_\u041F\u043E\u043A\u0438\u0434\u0430\u044F \u041A\u0443\u0440\u043B\u043E\u0432"
+  - name: "\u041F\u043E\u043A\u0438\u0434\u0430\u044F \u041A\u0443\u0440\u043B\u043E\u0432"
     logs:
     - isImporntant: 1
       Sad: "\u0414\u0435\u0434\u0443, \u0441\u0443\u0434\u044F \u043F\u043E \u0432\u0441\u0435\u043C\u0443,
@@ -5045,7 +5045,7 @@ MonoBehaviour:
     firstDirection: 0
     firstDirectionLength: 0.3
     secondDirection: 0
-  - name: "5_\u0413\u043E\u0440\u044B \u0421\u043D\u043E\u0432\u044C\u044F"
+  - name: "\u0413\u043E\u0440\u044B \u0421\u043D\u043E\u0432\u044C\u044F"
     logs:
     - isImporntant: 0
       Sad: "\u0417\u0430\u043F\u0430\u0445 \u0441\u0432\u0435\u0436\u0435\u0433\u043E
@@ -5145,7 +5145,7 @@ MonoBehaviour:
     firstDirection: 0
     firstDirectionLength: 0.3
     secondDirection: 0
-  - name: "6_\u0421\u043F\u0443\u0441\u043A \u0441 \u0433\u043E\u0440"
+  - name: "\u0421\u043F\u0443\u0441\u043A \u0441 \u0433\u043E\u0440"
     logs:
     - isImporntant: 0
       Sad: "\u0425\u043E\u043B\u043E\u0434\u043D\u044B\u0439 \u0432\u0435\u0442\u0435\u0440
@@ -5215,7 +5215,7 @@ MonoBehaviour:
     firstDirection: 1
     firstDirectionLength: 0.605
     secondDirection: 1
-  - name: "7_\u041E\u043A\u0440\u0430\u0438\u043D\u044B \u0421\u0443\u0440\u0438\u0446\u044B"
+  - name: "\u041E\u043A\u0440\u0430\u0438\u043D\u044B \u0421\u0443\u0440\u0438\u0446\u044B"
     logs:
     - isImporntant: 0
       Sad: "\u041C\u043D\u0435 \u043D\u0435 \u0445\u0432\u0430\u0442\u0430\u0435\u0442
@@ -5303,7 +5303,7 @@ MonoBehaviour:
     firstDirection: 1
     firstDirectionLength: 0.5
     secondDirection: 1
-  - name: "8_\u041A \u043E\u0437\u0435\u0440\u0443"
+  - name: "\u041A \u043E\u0437\u0435\u0440\u0443 \u0413\u0443\u0439\u044F"
     logs:
     - isImporntant: 0
       Sad: "\u0421\u043E\u043B\u043D\u0446\u0435 \u0441\u043B\u0435\u043F\u0438\u0442
@@ -5370,7 +5370,7 @@ MonoBehaviour:
     firstDirection: 2
     firstDirectionLength: 0.8
     secondDirection: 2
-  - name: "9_\u041E\u0437\u0435\u0440\u043E \u0413\u0443\u0439\u044F"
+  - name: "\u041E\u043A\u0440\u0430\u0438\u043D\u044B \u0424\u0438\u043B\u043E\u043D\u0438\u0446\u044B"
     logs:
     - isImporntant: 0
       Sad: "\u041E\u0442 \u043E\u0437\u0435\u0440\u0430 \u0432\u0435\u0435\u0442
@@ -5384,12 +5384,12 @@ MonoBehaviour:
       Neutral: "\u0423\u0441\u0442\u0430\u043B\u043E\u0441\u0442\u044C \u043E\u0442\u0441\u0442\u0443\u043F\u0438\u043B\u0430.  "
       Happy: "\u0423\u0441\u0442\u0430\u043B\u043E\u0441\u0442\u044C \u043E\u0442\u0441\u0442\u0443\u043F\u0438\u043B\u0430.  "
     - isImporntant: 1
-      Sad: "\u0411\u0430\u0431\u0443\u0448\u043A\u0430, \u044F \u043D\u0435 \u0445\u043E\u0447\u0443
-        \u0447\u0442\u043E\u0431\u044B \u0442\u044B \u0443\u043C\u0438\u0440\u0430\u043B\u0430."
-      Neutral: "\u0411\u0430\u0431\u0443\u0448\u043A\u0430, \u044F \u043D\u0435 \u0445\u043E\u0447\u0443
-        \u0447\u0442\u043E\u0431\u044B \u0442\u044B \u0443\u043C\u0438\u0440\u0430\u043B\u0430."
-      Happy: "\u0411\u0430\u0431\u0443\u0448\u043A\u0430, \u044F \u043D\u0435 \u0445\u043E\u0447\u0443
-        \u0447\u0442\u043E\u0431\u044B \u0442\u044B \u0443\u043C\u0438\u0440\u0430\u043B\u0430."
+      Sad: "\u0411\u0430\u0431\u0443\u0448\u043A\u0430, \u044F \u043D\u0435 \u043F\u043E\u0437\u0432\u043E\u043B\u044E
+        \u0447\u0442\u043E\u0431\u044B \u0442\u044B \u0443\u043C\u0435\u0440\u043B\u0430. "
+      Neutral: "\u0411\u0430\u0431\u0443\u0448\u043A\u0430, \u044F \u043D\u0435 \u043F\u043E\u0437\u0432\u043E\u043B\u044E
+        \u0447\u0442\u043E\u0431\u044B \u0442\u044B \u0443\u043C\u0435\u0440\u043B\u0430. "
+      Happy: "\u0411\u0430\u0431\u0443\u0448\u043A\u0430, \u044F \u043D\u0435 \u043F\u043E\u0437\u0432\u043E\u043B\u044E
+        \u0447\u0442\u043E\u0431\u044B \u0442\u044B \u0443\u043C\u0435\u0440\u043B\u0430. "
     - isImporntant: 0
       Sad: "\u0416\u0430\u043B\u044C \u0432 \u044D\u0442\u043E\u043C \u043E\u0437\u0435\u0440\u0435
         \u043D\u0435 \u0432\u043E\u0434\u044F\u0442\u0441\u044F \u043A\u0438\u0442\u044B."
@@ -5397,6 +5397,19 @@ MonoBehaviour:
         \u043D\u0435 \u0432\u043E\u0434\u044F\u0442\u0441\u044F \u043A\u0438\u0442\u044B."
       Happy: "\u0416\u0430\u043B\u044C \u0432 \u044D\u0442\u043E\u043C \u043E\u0437\u0435\u0440\u0435
         \u043D\u0435 \u0432\u043E\u0434\u044F\u0442\u0441\u044F \u043A\u0438\u0442\u044B."
+    - isImporntant: 1
+      Sad: "\u041E\u0437\u0435\u0440\u043E \u0413\u0443\u0439\u044F. \u041F\u0430\u043F\u0430
+        \u0440\u0430\u0441\u0441\u043A\u0430\u0437\u044B\u0432\u0430\u043B, \u0447\u0442\u043E
+        \u0432 \u0434\u0430\u0432\u043D\u0438\u0435 \u0432\u0440\u0435\u043C\u0435\u043D\u0430
+        \u0442\u0443\u0442 \u0443\u043F\u0430\u043B \u043C\u0435\u0442\u0435\u043E\u0440\u0438\u0442."
+      Neutral: "\u041E\u0437\u0435\u0440\u043E \u0413\u0443\u0439\u044F. \u041F\u0430\u043F\u0430
+        \u0440\u0430\u0441\u0441\u043A\u0430\u0437\u044B\u0432\u0430\u043B, \u0447\u0442\u043E
+        \u0432 \u0434\u0430\u0432\u043D\u0438\u0435 \u0432\u0440\u0435\u043C\u0435\u043D\u0430
+        \u0442\u0443\u0442 \u0443\u043F\u0430\u043B \u043C\u0435\u0442\u0435\u043E\u0440\u0438\u0442."
+      Happy: "\u041E\u0437\u0435\u0440\u043E \u0413\u0443\u0439\u044F. \u041F\u0430\u043F\u0430
+        \u0440\u0430\u0441\u0441\u043A\u0430\u0437\u044B\u0432\u0430\u043B, \u0447\u0442\u043E
+        \u0432 \u0434\u0430\u0432\u043D\u0438\u0435 \u0432\u0440\u0435\u043C\u0435\u043D\u0430
+        \u0442\u0443\u0442 \u0443\u043F\u0430\u043B \u043C\u0435\u0442\u0435\u043E\u0440\u0438\u0442."
     - isImporntant: 1
       Sad: "\u041F\u0430\u043F\u0430. \u041C\u043E\u0439 \u043B\u044E\u0431\u0438\u043C\u044B\u0439,
         \u043F\u0430\u043F\u043E\u0447\u043A\u0430 (\u043F\u043B\u0430\u0447\u0435\u0442) "
@@ -5407,13 +5420,13 @@ MonoBehaviour:
     - isImporntant: 0
       Sad: "\u042F \u0432\u0441\u043F\u043E\u043C\u0438\u043D\u0430\u044E \u044D\u0442\u0443
         \u043C\u0435\u0441\u0442\u043D\u043E\u0441\u0442\u044C, \u043C\u044B \u0442\u0443\u0442
-        \u0431\u044B\u043B\u0438 \u0432 \u0434\u0435\u0441\u0442\u0432\u0435."
+        \u0431\u044B\u043B\u0438 \u0432 \u0434\u0435\u0442\u0441\u0442\u0432\u0435."
       Neutral: "\u042F \u0432\u0441\u043F\u043E\u043C\u0438\u043D\u0430\u044E \u044D\u0442\u0443
         \u043C\u0435\u0441\u0442\u043D\u043E\u0441\u0442\u044C, \u043C\u044B \u0442\u0443\u0442
-        \u0431\u044B\u043B\u0438 \u0432 \u0434\u0435\u0441\u0442\u0432\u0435."
+        \u0431\u044B\u043B\u0438 \u0432 \u0434\u0435\u0442\u0441\u0442\u0432\u0435."
       Happy: "\u042F \u0432\u0441\u043F\u043E\u043C\u0438\u043D\u0430\u044E \u044D\u0442\u0443
         \u043C\u0435\u0441\u0442\u043D\u043E\u0441\u0442\u044C, \u043C\u044B \u0442\u0443\u0442
-        \u0431\u044B\u043B\u0438 \u0432 \u0434\u0435\u0441\u0442\u0432\u0435."
+        \u0431\u044B\u043B\u0438 \u0432 \u0434\u0435\u0442\u0441\u0442\u0432\u0435."
     - isImporntant: 0
       Sad: "\u042F \u0441\u043A\u043E\u0440\u043E \u0431\u0443\u0434\u0443 \u043D\u0430
         \u043C\u0435\u0441\u0442\u0435. \u0411\u0430\u0431\u0443\u0448\u043A\u0430,
@@ -5445,45 +5458,45 @@ MonoBehaviour:
   _spacingLength: 0.2
   _dotPrefab: {fileID: 1632984216819298127, guid: cadb4fad2478563499e8c483132fec12, type: 3}
   _maxEnergy: 100
-  _velocity: 20
+  _velocity: 10
   _startRidingEnergy: 95
-  _firstStateCondition: 80
-  _firstStateVelocity: 100
-  _secondStateCondition: 60
-  _secondStateVelocity: 100
-  _thirdStateCondition: 40
-  _thirdStateVelocity: 90
+  _firstStateCondition: 75
+  _firstStateVelocity: 130
+  _secondStateCondition: 50
+  _secondStateVelocity: 120
+  _thirdStateCondition: 25
+  _thirdStateVelocity: 110
   _fourthStateVelocity: 80
-  _energyDiminution: 0
+  _energyDiminution: 0.35
   _energyAddition: 20
-  _happyMultiplier: 150
-  _sadMultiplier: 80
-  _neutralMultiplier: 100
-  _sadCondition: 1
-  _neutralCondition: 1
+  _happyMultiplier: 100
+  _sadMultiplier: 110
+  _neutralMultiplier: 90
+  _sadCondition: 33
+  _neutralCondition: 66
   _timeInGameOn: 300
   _timeInRealLifeOn: 1
   _timeInGameOff: 1
   _timeInRealLifeOff: 3
-  _rainTemperatureCoef: 11
-  _sunTemperatureCoef: 1
-  _cloudTemperatureCoef: 1
-  _rainMoodCoef: 1
-  _sunMoodCoef: 1
-  _cloudMoodCoef: 1
-  _nightCoefficient: 1
-  _morningCoefficient: 1
-  _dayCoefficient: 1
-  _eveningCoefficient: 1
+  _rainTemperatureCoef: -0.2
+  _sunTemperatureCoef: 0.001
+  _cloudTemperatureCoef: 0
+  _rainMoodCoef: -0.2
+  _sunMoodCoef: -0.01
+  _cloudMoodCoef: -0.1
+  _nightCoefficient: -0.3
+  _morningCoefficient: 0.02
+  _dayCoefficient: 0.05
+  _eveningCoefficient: -0.1
   _temperatureState: 0
-  _currentTemperature: 1
-  _coldMultiplier: 1
-  _coldCondition: 1
-  _normalMultiplier: 1
-  _normalCondition: 1
-  _hotMultiplier: 1
+  _currentTemperature: 8
+  _coldMultiplier: -0.4
+  _coldCondition: 10
+  _normalMultiplier: 0
+  _normalCondition: 25
+  _hotMultiplier: -0.2
   _minTemperature: -5
-  _maxTemperature: 40
+  _maxTemperature: 47
 --- !u!4 &1449076302
 Transform:
   m_ObjectHideFlags: 0

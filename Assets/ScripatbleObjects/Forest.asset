@@ -15,6 +15,6 @@ MonoBehaviour:
   landscapeType: 0
   temperatureCoefficient: 1
   landscapeLogs: []
-  landscapeUpMultiplier: 1
+  landscapeUpMultiplier: 0.9
   landscapeStraightMultiplier: 1
-  landscapeDownMultiplier: 1
+  landscapeDownMultiplier: 1.1

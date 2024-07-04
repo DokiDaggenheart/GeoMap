@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Hills
   m_EditorClassIdentifier: 
   landscapeType: 1
-  temperatureCoefficient: 1
+  temperatureCoefficient: 0.3
   landscapeLogs: []
   landscapeUpMultiplier: 0.5
-  landscapeStraightMultiplier: 1.5
-  landscapeDownMultiplier: 1.5
+  landscapeStraightMultiplier: 1
+  landscapeDownMultiplier: 1.6
