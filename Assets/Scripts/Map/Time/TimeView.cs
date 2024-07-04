@@ -13,11 +13,6 @@ public class TimeView : MonoBehaviour
     public TextMeshProUGUI timerText;
     public TextMeshProUGUI timeOfDayText;
     public TextMeshProUGUI dayText;
-
-    private void Start()
-    {
-        UpdateTimeOfDayText();
-    }
     private void Update()
     {
         time += Time.deltaTime * _timeController.timeScale;
