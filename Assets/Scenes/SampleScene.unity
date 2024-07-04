@@ -282,8 +282,6 @@ GameObject:
   - component: {fileID: 40923536}
   - component: {fileID: 40923539}
   - component: {fileID: 40923540}
-  - component: {fileID: 40923538}
-  - component: {fileID: 40923537}
   m_Layer: 5
   m_Name: SpeedText
   m_TagString: Untagged
@@ -310,34 +308,6 @@ RectTransform:
   m_AnchoredPosition: {x: -0.000030518, y: 0.00000453}
   m_SizeDelta: {x: 235, y: 48.395}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &40923537
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 40923535}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d06993bc9af84046bf891ed00c3ed3a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timeScale: 0
---- !u!114 &40923538
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 40923535}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5dad9ab7f9b0bf74791870882495b1f7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timerText: {fileID: 40923540}
-  timeOfDayText: {fileID: 0}
-  dayText: {fileID: 0}
 --- !u!222 &40923539
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1340,7 +1310,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: <color=green>Morning</color>
+  m_text: Morning
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -5491,7 +5461,7 @@ MonoBehaviour:
   _neutralMultiplier: 100
   _sadCondition: 1
   _neutralCondition: 1
-  _timeInGameOn: 30
+  _timeInGameOn: 300
   _timeInRealLifeOn: 1
   _timeInGameOff: 1
   _timeInRealLifeOff: 3
@@ -6249,7 +6219,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: <color=green>00:00</color>
+  m_text: 05:00
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
