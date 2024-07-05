@@ -15,14 +15,16 @@ public class MovementController : MonoBehaviour
     [Inject] private LogSystem _logSystem;
     [Inject] private WeatherModel _weatherModel;
     [Inject] private TemperatureModel _temperatureModel;
-
+    public Animator roadAnimator;
     private float distanceTraveled;
+    public int pathSectionIndex = 0;
+    private int pathAnimationIndex = 0;
+    private int roadLandcsapeSection = 1;
 
     private void Start()
     {
         _logSystem.SetLogList(_pathModel.pathList[pathSectionIndex]);
     }
-    public int pathSectionIndex = 0;
     private void Update()
     {
         _movementModel.isRiding = _energyController.CheckEnergy();
@@ -45,6 +47,18 @@ public class MovementController : MonoBehaviour
                 _weatherModel.ChangeWeather(_pathModel.pathList[pathSectionIndex].firstWeather);
             else
                 _weatherModel.ChangeWeather(_pathModel.pathList[pathSectionIndex].secondWeather);
+
+            if(_movementModel.progress < _pathModel.pathList[pathSectionIndex].firstLandscapeLength && roadLandcsapeSection == 1)
+            {
+
+                roadLandcsapeSection = 2;
+                ChangeRoadAnimation();
+            } 
+            else if(roadLandcsapeSection == 2)
+            {
+                roadLandcsapeSection = 1;
+                ChangeRoadAnimation();
+            }
         }
 
         if (!_movementModel.isRiding)
@@ -116,7 +130,7 @@ public class MovementController : MonoBehaviour
 
     public string GetCurrentTemperature()
     {
-        string currentTemperaure = _temperatureModel.currentTemperature + " °C";
+        string currentTemperaure = Mathf.Round(_temperatureModel.currentTemperature * 10) / 10 + " °C";
         return currentTemperaure;
     }
 
@@ -151,8 +165,14 @@ public class MovementController : MonoBehaviour
 
     public string GetTravelledDistance()
     {
-        int distance = (int)Math.Floor(distanceTraveled);
+        float distance = Mathf.Round(distanceTraveled * 10) / 10;
         string travelledDistance = distance + " km";
         return travelledDistance;
+    }
+
+    private void ChangeRoadAnimation()
+    {
+        pathAnimationIndex++;
+        roadAnimator.SetInteger("pathSectionIndex", pathAnimationIndex);
     }
 }

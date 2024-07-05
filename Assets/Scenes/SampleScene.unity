@@ -1915,6 +1915,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6569de39339b5c8439f2474b7291728a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  roadAnimator: {fileID: 2097730866}
   pathSectionIndex: 0
 --- !u!4 &457095622
 Transform:
