@@ -14,7 +14,7 @@ public class TimeModel
 
     public int gameHours = 5;
     public int gameMinutes = 0;
-    public int gameDays = 0;
+    public int gameDays = 1;
 
     public float nightCoefficient;
     public float morningCoefficient;
