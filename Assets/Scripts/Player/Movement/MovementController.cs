@@ -19,6 +19,11 @@ public class MovementController : MonoBehaviour
     [SerializeField] private GameObject RestButton;
     [SerializeField] private GameObject restPanel;
 
+
+    public AudioSource musicSource;
+    public AudioClip[] musicClips;
+
+
     public Animator roadAnimator;
     private float distanceTraveled;
     public int pathSectionIndex = 0;
@@ -30,6 +35,7 @@ public class MovementController : MonoBehaviour
     {
         _logSystem.SetLogList(_pathModel.pathList[pathSectionIndex]);
         _movementModel.isRiding = true;
+        ChangeMusic(0);
     }
     private void Update()
     {
@@ -90,6 +96,7 @@ public class MovementController : MonoBehaviour
             pathSectionIndex += 1;
             _movementModel.progress = 0;
             _logSystem.SetLogList(_pathModel.pathList[pathSectionIndex]);
+            ChangeMusic(pathSectionIndex);
         }
     }
     public float CurrentLandscapeMultiplier(LandscapeData landscape, PathSection pathSection, float progress)
@@ -193,5 +200,11 @@ public class MovementController : MonoBehaviour
             restPanel.SetActive(true);
             _movementModel.isRiding = false;
         }
+    }
+
+    public void ChangeMusic(int index)
+    {
+        musicSource.clip = musicClips[index];
+        musicSource.Play();
     }
 }
