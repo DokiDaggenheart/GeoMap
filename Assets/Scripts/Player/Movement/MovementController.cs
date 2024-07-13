@@ -64,13 +64,12 @@ public class MovementController : MonoBehaviour
             else
                 _weatherModel.ChangeWeather(_pathModel.pathList[pathSectionIndex].secondWeather);
 
-            if (_movementModel.progress < _pathModel.pathList[pathSectionIndex].firstLandscapeLength && roadLandcsapeSection == 1)
+            if (_movementModel.progress < _pathModel.pathList[pathSectionIndex].firstLandscapeLength && roadLandcsapeSection != 2)
             {
-
                 roadLandcsapeSection = 2;
                 ChangeRoadAnimation();
             }
-            else if (roadLandcsapeSection == 2)
+            else if (_movementModel.progress >= _pathModel.pathList[pathSectionIndex].firstLandscapeLength && roadLandcsapeSection != 1)
             {
                 roadLandcsapeSection = 1;
                 ChangeRoadAnimation();
@@ -181,6 +180,8 @@ public class MovementController : MonoBehaviour
     {
         pathAnimationIndex++;
         roadAnimator.SetInteger("pathSectionIndex", pathAnimationIndex);
+
+        Debug.Log($"Animation changed to {pathAnimationIndex}");
     }
 
     public void OpenRestPanel()
