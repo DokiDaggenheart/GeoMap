@@ -19,7 +19,6 @@ public class TimeView : MonoBehaviour
         if(time >= 60)
         {
             time = 0;
-            Debug.Log("minutes++");
             _timeModel.gameMinutes++;
             if (_timeModel.gameMinutes >= 60)
             {

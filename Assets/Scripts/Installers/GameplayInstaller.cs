@@ -19,5 +19,6 @@ public class GameplayInstaller : MonoInstaller
         Container.Bind<WeatherController>().AsSingle();
         Container.Bind<WeatherModel>().AsSingle();
         Container.Bind<LogSystem>().FromComponentInHierarchy().AsSingle();
+        Container.Bind<InventorySystem>().AsSingle();
     }
 }

@@ -6,6 +6,7 @@ using Zenject;
 public class EnergyController
 {
     [Inject] EnergyModel _energyModel;
+    [Inject] MovementModel _movementModel;
     public float energyMultiplier()
     {
         float multiplier;
@@ -21,10 +22,14 @@ public class EnergyController
         return multiplier / 100;
     }
 
-    public bool CheckEnergy()
+    public void CheckEnergy()
     {
-        if (_energyModel.energy > _energyModel.startRidingEnergy) return true;
-        if(_energyModel.energy < 1) return false;
-        return true;
+        if (_energyModel.energy > 100)
+            _energyModel.energy = 100;
+        if (_energyModel.energy < 0)
+        {
+            _movementModel.isRiding = false;
+            _energyModel.energy = 0;
+        }
     }
 }

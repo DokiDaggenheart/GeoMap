@@ -15,22 +15,38 @@ public class MovementController : MonoBehaviour
     [Inject] private LogSystem _logSystem;
     [Inject] private WeatherModel _weatherModel;
     [Inject] private TemperatureModel _temperatureModel;
+
+    [SerializeField] private GameObject RestButton;
+    [SerializeField] private GameObject restPanel;
+
     public Animator roadAnimator;
     private float distanceTraveled;
     public int pathSectionIndex = 0;
     private int pathAnimationIndex = 0;
     private int roadLandcsapeSection = 1;
+    private bool isRestButtonActive;
 
     private void Start()
     {
         _logSystem.SetLogList(_pathModel.pathList[pathSectionIndex]);
+        _movementModel.isRiding = true;
     }
     private void Update()
     {
-        _movementModel.isRiding = _energyController.CheckEnergy();
+        _energyController.CheckEnergy();
+
+        if (_energyModel.energy < 20)
+            isRestButtonActive = true;
+        else
+            isRestButtonActive = false;
+
+        if (isRestButtonActive)
+            RestButton.GetComponent<Image>().color = Color.green;
+        else
+            RestButton.GetComponent<Image>().color = Color.grey;
+
         if (_movementModel.isRiding)
         {
-            Debug.Log("total velocity is " + _movementModel.totalVelocity);
             GoToNextPoint();
 
             _movementModel.totalVelocity = _movementModel.velocity
@@ -38,8 +54,8 @@ public class MovementController : MonoBehaviour
                 * CurrentLandscapeMultiplier(GetCurrentLandscape(), _pathModel.pathList[pathSectionIndex], _movementModel.progress);
 
             gameObject.transform.position = Vector2.Lerp(_pathModel.pathList[pathSectionIndex].start.position, _pathModel.pathList[pathSectionIndex].end.position, _movementModel.progress);
-            _movementModel.progress += (_movementModel.totalVelocity / _pathModel.pathList[pathSectionIndex].length) * (Time.deltaTime*_timeController.timeScale / 3600);
-            _energyModel.energy -= _energyModel.energyDiminution * _moodController.MoodMultiplier() * (Time.deltaTime*_timeController.timeScale / 60);
+            _movementModel.progress += (_movementModel.totalVelocity / _pathModel.pathList[pathSectionIndex].length) * (Time.deltaTime * _timeController.timeScale / 3600);
+            _energyModel.energy -= _energyModel.energyDiminution * _moodController.MoodMultiplier() * (Time.deltaTime * _timeController.timeScale / 60);
 
             distanceTraveled += _movementModel.totalVelocity * (Time.deltaTime * _timeController.timeScale / 3600);
 
@@ -48,13 +64,13 @@ public class MovementController : MonoBehaviour
             else
                 _weatherModel.ChangeWeather(_pathModel.pathList[pathSectionIndex].secondWeather);
 
-            if(_movementModel.progress < _pathModel.pathList[pathSectionIndex].firstLandscapeLength && roadLandcsapeSection == 1)
+            if (_movementModel.progress < _pathModel.pathList[pathSectionIndex].firstLandscapeLength && roadLandcsapeSection == 1)
             {
 
                 roadLandcsapeSection = 2;
                 ChangeRoadAnimation();
-            } 
-            else if(roadLandcsapeSection == 2)
+            }
+            else if (roadLandcsapeSection == 2)
             {
                 roadLandcsapeSection = 1;
                 ChangeRoadAnimation();
@@ -64,7 +80,6 @@ public class MovementController : MonoBehaviour
         if (!_movementModel.isRiding)
         {
             _movementModel.totalVelocity = 0;
-            _energyModel.energy += _energyModel.energyAddition * Time.deltaTime;
         }
     }
 
@@ -96,14 +111,6 @@ public class MovementController : MonoBehaviour
         }
         Console.WriteLine("LandcapeMultiplierError");
         return 0;
-    }
-
-    IEnumerator Rest(float restTime, float energyRecovery)
-    {
-        _movementModel.isRiding = false;
-        _energyModel.energy = (energyRecovery / restTime) / _timeController.timeScale;
-        yield return new WaitForSeconds((restTime * 60)/ _timeController.timeScale);
-        _movementModel.isRiding = true;
     }
     public LandscapeData GetCurrentLandscape()
     {
@@ -174,5 +181,16 @@ public class MovementController : MonoBehaviour
     {
         pathAnimationIndex++;
         roadAnimator.SetInteger("pathSectionIndex", pathAnimationIndex);
+    }
+
+    public void OpenRestPanel()
+    {
+        if(_energyModel.energy < 20)
+        {
+            _logSystem.logWindowIsVisible = true;
+            _logSystem.LogWindowVisibilityChanging();
+            restPanel.SetActive(true);
+            _movementModel.isRiding = false;
+        }
     }
 }

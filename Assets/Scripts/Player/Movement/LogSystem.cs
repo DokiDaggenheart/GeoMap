@@ -21,7 +21,7 @@ public class LogSystem : MonoBehaviour
 
     private List<LogEntry> currentLogList;
     private int logListCurrentIndex = 0;
-    private bool logWindowIsVisible = false;
+    public bool logWindowIsVisible = false;
 
     private void Update()
     {

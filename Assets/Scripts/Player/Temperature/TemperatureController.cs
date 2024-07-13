@@ -18,13 +18,8 @@ public class TemperatureController : MonoBehaviour
         {
 
             AdjustTemperature(_weatherController.WeatherTemperatureCoefficient() * GetCurrentLandscapeCoefficient());
-            Debug.Log("current tempearuture" + _temperatureModel.currentTemperature);
             AdjustTemperature(_timeController.GetCurrentTimeOfDayCoefficient() * GetCurrentLandscapeCoefficient());
-
-            Debug.Log("current tempearuture" + _temperatureModel.currentTemperature);
             _temperatureModel.currentTemperature = Mathf.Clamp(_temperatureModel.currentTemperature, -5, 40);
-
-            Debug.Log("current tempearuture" + _temperatureModel.currentTemperature);
             time = 0.0f;
         }
     }
