@@ -1,29 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class LowerButton : MonoBehaviour
 {
-    [SerializeField] private GameObject window;
-    private void Start()
+    public void PressTheButton()
     {
-        LowerButtonController.TurnOffButtons += DeactivateWindow;
-    }
-    public void ActivateWindow()
-    {
-        LowerButtonController.InvokeTurnOffButtons();
-        try
-        {
-            window.SetActive(true);
-        }
-        catch
-        {
-
-        }
+        StartCoroutine(ChangeButtonsColor());
     }
 
-    public void DeactivateWindow()
+    private IEnumerator ChangeButtonsColor()
     {
-        window.gameObject.SetActive(false);
+        yield return new WaitForSeconds(0.1f);
+
+        Color color;
+        ColorUtility.TryParseHtmlString("#717171", out color);
+        GetComponent<Image>().color = color;
+        GetComponentInChildren<TextMeshProUGUI>().color = Color.white;
     }
 }

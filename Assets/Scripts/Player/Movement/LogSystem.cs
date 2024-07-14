@@ -7,13 +7,13 @@ using UnityEngine.UI;
 
 public class LogSystem : MonoBehaviour
 {
-    public GameObject logEntryPrefab; // Префаб для логов
-    public Transform logContent; // Контейнер для логов (Content в Scroll View)
+    public GameObject logEntryPrefab; 
+    public Transform logContent; 
     public Color importantLogColor = Color.yellow;
     public Color defaultLogColor = Color.white;
     public Image viewPort;
     public Image logWindow;
-
+    public AudioSource logNotificationSource;
 
     [Inject] private TimeModel _timeModel;
     [Inject] private MovementModel _movementModel;
@@ -79,23 +79,26 @@ public class LogSystem : MonoBehaviour
         TextMeshProUGUI logEntryText = logEntryObject.GetComponent<TextMeshProUGUI>();
         logEntryText.text = $"[{_timeModel.CurrentTime()}] {text}";
         logEntryText.color = isImportant ? importantLogColor : defaultLogColor;
+        logNotificationSource.Play();
         ScrollContent(0.5f);
     }
 
     public void LogWindowVisibilityChanging()
     {
-        if (logWindowIsVisible)
-        {
-            viewPort.color = new Color(viewPort.color.r, viewPort.color.g, viewPort.color.b, 0);
-            logWindow.color = new Color(logWindow.color.r, logWindow.color.g, logWindow.color.b, 0);
-            logWindowIsVisible = false;
-        }
-        else
-        {
-            viewPort.color = new Color(viewPort.color.r, viewPort.color.g, viewPort.color.b, 255);
-            logWindow.color = new Color(logWindow.color.r, logWindow.color.g, logWindow.color.b, 255);
-            logWindowIsVisible = true;
-        }
+    }
+
+    public void ShowLogWindow()
+    {
+        viewPort.color = new Color(viewPort.color.r, viewPort.color.g, viewPort.color.b, 255);
+        logWindow.color = new Color(logWindow.color.r, logWindow.color.g, logWindow.color.b, 255);
+        logWindowIsVisible = true;
+    }
+
+    public void HideLogWindow()
+    {
+        viewPort.color = new Color(viewPort.color.r, viewPort.color.g, viewPort.color.b, 0);
+        logWindow.color = new Color(logWindow.color.r, logWindow.color.g, logWindow.color.b, 0);
+        logWindowIsVisible = false;
     }
 
     private void ScrollContent(float y)

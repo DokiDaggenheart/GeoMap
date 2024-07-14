@@ -1,7 +1,7 @@
 using System.IO;
 using UnityEngine;
 using UnityEngine.UI;
-
+using TMPro;
 namespace SceneSystem
 {
     public class ActLoader : MonoBehaviour
@@ -10,10 +10,13 @@ namespace SceneSystem
         private ActData actData;
         private int currentSceneIndex;
 
+        public Image backgroundImage;
         public Image character1Image;
         public Image character2Image;
-        public Text sceneText;
-        public Text characterSpeakingText;
+        public TextMeshProUGUI sceneText;
+        public TextMeshProUGUI character1name;
+        public TextMeshProUGUI character2name;
+        private int characterSpeaking;
         public Button choice1Button;
         public Button choice2Button;
         public Button nextButton;
@@ -34,7 +37,7 @@ namespace SceneSystem
             }
             else
             {
-                Debug.LogError("Act file not found: " + path);
+                Debug.LogError("‘айл акта не найден: " + path);
             }
         }
 
@@ -45,33 +48,56 @@ namespace SceneSystem
             currentSceneIndex = index;
 
             sceneText.text = sceneData.text;
+            backgroundImage.sprite = actData.backgroundImage;
 
-            character1Image.sprite = sceneData.character1Image;
-            character2Image.sprite = sceneData.character2Image;
-
-            if (sceneData.speakingCharacter == 0)
-            {
-                characterSpeakingText.text = "Character 1 is speaking";
-            }
+            if(sceneData.character1Image == null)
+                character1Image.color = new Color(255, 255, 255, 0);
             else
             {
-                characterSpeakingText.text = "Character 2 is speaking";
+                character1Image.color = new Color(255, 255, 255, 255);
+                character1Image.sprite = sceneData.character1Image;
+            }
+
+            if (sceneData.character2Image == null)
+                character2Image.color = new Color(255, 255, 255, 0);
+            else
+            {
+                character2Image.color = new Color(255, 255, 255, 255);
+                character2Image.sprite = sceneData.character2Image;
+            }
+
+            characterSpeaking = sceneData.speakingCharacter;
+            character1name.text = actData.firstCharacterName;
+            character2name.text = actData.secondCharacterName;
+            if(characterSpeaking == 0)
+            {
+                character1name.color = Color.yellow;
+                character1name.fontSize = 42;
+                character2name.color = Color.white;
+                character2name.fontSize = 36;
+            }
+            if (characterSpeaking == 1)
+            {
+                character2name.color = Color.yellow;
+                character2name.fontSize = 42;
+                character1name.color = Color.white;
+                character1name.fontSize = 36;
             }
 
             if (sceneData.isChoiceScene)
             {
                 choice1Button.gameObject.SetActive(true);
                 choice2Button.gameObject.SetActive(true);
-                nextButton.gameObject.SetActive(false);/*
+                nextButton.gameObject.SetActive(false);
 
-                choice1Button.GetComponentInChildren<Text>().text = sceneData.choice1Text;
-                choice2Button.GetComponentInChildren<Text>().text = sceneData.choice2Text;*/
+                choice1Button.GetComponentInChildren<TextMeshProUGUI>().text = sceneData.choice1Text;
+                choice2Button.GetComponentInChildren<TextMeshProUGUI>().text = sceneData.choice2Text;
 
                 choice1Button.onClick.RemoveAllListeners();
-                choice1Button.onClick.AddListener(() => GoToScene(actData.connections.Find(c => c.fromSceneIndex == currentSceneIndex && c.isChoice1).toSceneIndex));
+                choice1Button.onClick.AddListener(() => GoToScene(sceneData.choice1Scene));
 
                 choice2Button.onClick.RemoveAllListeners();
-                choice2Button.onClick.AddListener(() => GoToScene(actData.connections.Find(c => c.fromSceneIndex == currentSceneIndex && !c.isChoice1).toSceneIndex));
+                choice2Button.onClick.AddListener(() => GoToScene(sceneData.choice2Scene));
             }
             else
             {
@@ -82,24 +108,30 @@ namespace SceneSystem
                 nextButton.onClick.RemoveAllListeners();
                 nextButton.onClick.AddListener(() => GoToNextScene());
             }
+
+            if (sceneData.isEndScene)
+            {
+                nextButton.onClick.RemoveAllListeners();
+            }
         }
 
-        private void GoToScene(int index)
+        private void GoToScene(string sceneName)
         {
-            DisplayScene(index);
+            int nextIndex = actData.scenes.FindIndex(scene => scene.name == sceneName);
+            if (nextIndex >= 0)
+            {
+                DisplayScene(nextIndex);
+            }
+            else
+            {
+                Debug.LogError("—цена не найдена: " + sceneName);
+            }
         }
 
         private void GoToNextScene()
         {
-            var nextConnection = actData.connections.Find(c => c.fromSceneIndex == currentSceneIndex && !c.isChoice1);
-            if (nextConnection != null)
-            {
-                DisplayScene(nextConnection.toSceneIndex);
-            }
-            else
-            {
-                Debug.Log("End of Act");
-            }
+            string nextSceneName = actData.scenes[currentSceneIndex].nextScene;
+            GoToScene(nextSceneName);
         }
     }
 }

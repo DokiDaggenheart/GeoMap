@@ -23,11 +23,11 @@ public class MovementController : MonoBehaviour
     public AudioSource musicSource;
     public AudioClip[] musicClips;
 
-
     public Animator roadAnimator;
     private float distanceTraveled;
     public int pathSectionIndex = 0;
-    private int pathAnimationIndex = 0;
+    private int animationSectionIndex = 1;
+    private int animationLandscapeIndex = 1;
     private int roadLandcsapeSection = 1;
     private bool isRestButtonActive;
 
@@ -72,11 +72,13 @@ public class MovementController : MonoBehaviour
 
             if (_movementModel.progress < _pathModel.pathList[pathSectionIndex].firstLandscapeLength && roadLandcsapeSection != 2)
             {
+                animationLandscapeIndex = 1;
                 roadLandcsapeSection = 2;
                 ChangeRoadAnimation();
             }
             else if (_movementModel.progress >= _pathModel.pathList[pathSectionIndex].firstLandscapeLength && roadLandcsapeSection != 1)
             {
+                animationLandscapeIndex = 2;
                 roadLandcsapeSection = 1;
                 ChangeRoadAnimation();
             }
@@ -94,6 +96,7 @@ public class MovementController : MonoBehaviour
         {
             Debug.Log("GoNext");
             pathSectionIndex += 1;
+            animationSectionIndex += 1;
             _movementModel.progress = 0;
             _logSystem.SetLogList(_pathModel.pathList[pathSectionIndex]);
             ChangeMusic(pathSectionIndex);
@@ -185,10 +188,8 @@ public class MovementController : MonoBehaviour
 
     private void ChangeRoadAnimation()
     {
-        pathAnimationIndex++;
-        roadAnimator.SetInteger("pathSectionIndex", pathAnimationIndex);
-
-        Debug.Log($"Animation changed to {pathAnimationIndex}");
+        string animationName = "RoadAnimation " + animationSectionIndex + "-" + animationLandscapeIndex;
+        roadAnimator.CrossFade(animationName, 0);
     }
 
     public void OpenRestPanel()

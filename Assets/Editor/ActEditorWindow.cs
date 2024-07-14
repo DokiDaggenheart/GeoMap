@@ -8,7 +8,6 @@ namespace SceneSystem
         private ActData actData = new ActData();
         private Vector2 scrollPos;
         private SceneData selectedScene;
-        private SceneConnection selectedConnection;
         private Vector2 mousePosition;
         private float hSbarValue;
         private float vSbarValue = 0;
@@ -44,10 +43,6 @@ namespace SceneSystem
             EndWindows();
 
             hSbarValue = (GUILayout.HorizontalScrollbar(hSbarValue, 1.0f, -10.0f, 10.0f) * -1);
-            foreach (var connection in actData.connections)
-            {
-                DrawConnection(connection);
-            }
 
             EditorGUILayout.EndScrollView();
 
@@ -153,42 +148,9 @@ namespace SceneSystem
             
         }
 
-        private void DrawConnection(SceneConnection connection)
-        {
-            var fromSceneRect = new Rect(10 + connection.fromSceneIndex * 210, 10, 200, 150);
-            var toSceneRect = new Rect(10 + connection.toSceneIndex * 210, 10, 200, 150);
-
-            Handles.DrawBezier(
-                fromSceneRect.center,
-                toSceneRect.center,
-                fromSceneRect.center + Vector2.right * 50,
-                toSceneRect.center - Vector2.right * 50,
-                Color.black,
-                null,
-                2f
-            );
-        }
-
         private void HandleEvents()
         {
             mousePosition = Event.current.mousePosition;
-            if (Event.current.type == EventType.MouseDown && Event.current.button == 1)
-            {
-                GenericMenu menu = new GenericMenu();
-                menu.AddItem(new GUIContent("Add Connection"), false, () => StartConnection());
-                menu.ShowAsContext();
-            }
-        }
-
-        private void StartConnection()
-        {
-            if (selectedScene == null) return;
-            var connection = new SceneConnection
-            {
-                fromSceneIndex = actData.scenes.IndexOf(selectedScene)
-            };
-            actData.connections.Add(connection);
-            selectedConnection = connection;
         }
 
         private void SaveAct()

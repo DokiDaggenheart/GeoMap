@@ -20,7 +20,6 @@ public class InventorySystem
         if(food > 0)
         {
             food--;
-
         }
     }
 

@@ -22,13 +22,6 @@ namespace SceneSystem
         public string choice2Scene;
         public Button deleteButton;
     }
-    [System.Serializable]
-    public class SceneConnection
-    {
-        public int fromSceneIndex;
-        public int toSceneIndex;
-        public bool isChoice1;
-    }
 
     [System.Serializable]
     public class ActData
@@ -38,6 +31,5 @@ namespace SceneSystem
         public string firstCharacterName;
         public string secondCharacterName;
         public List<SceneData> scenes = new List<SceneData>();
-        public List<SceneConnection> connections = new List<SceneConnection>();
     }
 }
