@@ -112,6 +112,7 @@ namespace SceneSystem
             if (sceneData.isEndScene)
             {
                 nextButton.onClick.RemoveAllListeners();
+                nextButton.onClick.AddListener(() => gameObject.SetActive(false));
             }
         }
 
