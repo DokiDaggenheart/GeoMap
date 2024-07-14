@@ -67,9 +67,19 @@ namespace SceneSystem
             }
 
             characterSpeaking = sceneData.speakingCharacter;
-            character1name.text = actData.firstCharacterName;
-            character2name.text = actData.secondCharacterName;
-            if(characterSpeaking == 0)
+            if (actData.firstCharacterName != "NO")
+                character1name.text = actData.firstCharacterName;
+            else
+                character1name.text = " ";
+
+
+            if (actData.secondCharacterName != "NO")
+                character2name.text = actData.secondCharacterName;
+            else
+                character2name.text = " ";
+
+
+            if (characterSpeaking == 0)
             {
                 character1name.color = Color.yellow;
                 character1name.fontSize = 42;
