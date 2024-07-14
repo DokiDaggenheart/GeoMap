@@ -14,6 +14,7 @@ public class LogSystem : MonoBehaviour
     public Image viewPort;
     public Image logWindow;
     public AudioSource logNotificationSource;
+    [SerializeField] GameObject firstLog;
 
     [Inject] private TimeModel _timeModel;
     [Inject] private MovementModel _movementModel;
@@ -75,16 +76,14 @@ public class LogSystem : MonoBehaviour
 
     public void AddLogEntry(string text, bool isImportant)
     {
+        if (firstLog != null)
+            Destroy(firstLog);
         GameObject logEntryObject = Instantiate(logEntryPrefab, logContent);
         TextMeshProUGUI logEntryText = logEntryObject.GetComponent<TextMeshProUGUI>();
         logEntryText.text = $"[{_timeModel.CurrentTime()}] {text}";
         logEntryText.color = isImportant ? importantLogColor : defaultLogColor;
         logNotificationSource.Play();
         ScrollContent(0.5f);
-    }
-
-    public void LogWindowVisibilityChanging()
-    {
     }
 
     public void ShowLogWindow()

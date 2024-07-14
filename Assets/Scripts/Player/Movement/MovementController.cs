@@ -15,15 +15,18 @@ public class MovementController : MonoBehaviour
     [Inject] private LogSystem _logSystem;
     [Inject] private WeatherModel _weatherModel;
     [Inject] private TemperatureModel _temperatureModel;
+    [Inject] private UISystem _uiSystem;
 
     [SerializeField] private GameObject RestButton;
     [SerializeField] private GameObject restPanel;
 
 
     public AudioSource musicSource;
+    public AudioSource rainSource;
     public AudioClip[] musicClips;
 
     public Animator roadAnimator;
+    public Animator playerAnimator;
     private float distanceTraveled;
     public int pathSectionIndex = 0;
     private int animationSectionIndex = 1;
@@ -53,6 +56,12 @@ public class MovementController : MonoBehaviour
 
         if (_movementModel.isRiding)
         {
+            if (roadAnimator.speed == 0)
+            {
+                roadAnimator.speed = 1;
+                playerAnimator.speed = 1;
+            }
+
             GoToNextPoint();
 
             _movementModel.totalVelocity = _movementModel.velocity
@@ -87,6 +96,12 @@ public class MovementController : MonoBehaviour
         if (!_movementModel.isRiding)
         {
             _movementModel.totalVelocity = 0;
+
+            if (roadAnimator.speed == 1)
+            {
+                roadAnimator.speed = 0;
+                playerAnimator.speed = 0;
+            }
         }
     }
 
@@ -196,8 +211,7 @@ public class MovementController : MonoBehaviour
     {
         if(_energyModel.energy < 20)
         {
-            _logSystem.logWindowIsVisible = true;
-            _logSystem.LogWindowVisibilityChanging();
+            _uiSystem.UnpressButtons();
             restPanel.SetActive(true);
             _movementModel.isRiding = false;
         }
@@ -207,5 +221,9 @@ public class MovementController : MonoBehaviour
     {
         musicSource.clip = musicClips[index];
         musicSource.Play();
+        if(index == 4)
+            rainSource.Play();
+        if (index == 5)
+            rainSource.Stop();
     }
 }

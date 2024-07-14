@@ -221,7 +221,6 @@ GameObject:
   - component: {fileID: 8097499618845409069}
   - component: {fileID: 7783541532111672480}
   - component: {fileID: 2620179335757050312}
-  - component: {fileID: 8276856911027562093}
   m_Layer: 5
   m_Name: AchievementWindow
   m_TagString: Untagged
@@ -311,23 +310,3 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 1
   m_TargetDisplay: 0
---- !u!114 &8276856911027562093
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8344237892232424083}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b8a4926f05ca8c41b9fa145d64c4061, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  logEntryPrefab: {fileID: 7243777712664042678, guid: 6d40ecb23e66e8b43a5315fbbc293b41, type: 3}
-  logContent: {fileID: 0}
-  importantLogColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  defaultLogColor: {r: 1, g: 1, b: 1, a: 1}
-  viewPort: {fileID: 0}
-  logWindow: {fileID: 7783541532111672480}
-  logNotificationSource: {fileID: 0}
-  logWindowIsVisible: 0
