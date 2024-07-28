@@ -2327,6 +2327,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RestButton: {fileID: 2056347187}
   restPanel: {fileID: 1732420822}
+  eventPanel: {fileID: 1455231527}
   musicSource: {fileID: 1858491077}
   rainSource: {fileID: 1689730539}
   musicClips:
@@ -5402,6 +5403,7 @@ MonoBehaviour:
     firstDirection: 2
     firstDirectionLength: 0.514
     secondDirection: 2
+    EventName: 
   - name: "\u0427\u0435\u0440\u0435\u0437 \u0440. \u0413\u0440\u0430\u043D\u0438\u0446\u043A\u0430"
     logs:
     - isImporntant: 1
@@ -5453,6 +5455,7 @@ MonoBehaviour:
     firstDirection: 2
     firstDirectionLength: 0.556
     secondDirection: 2
+    EventName: 
   - name: "\u041E\u043A\u0440\u0430\u0438\u043D\u044B \u041A\u0443\u0440\u043B\u043E\u0432\u0430"
     logs:
     - isImporntant: 0
@@ -5529,6 +5532,7 @@ MonoBehaviour:
     firstDirection: 0
     firstDirectionLength: 0.66
     secondDirection: 2
+    EventName: 
   - name: "\u041F\u043E\u043A\u0438\u0434\u0430\u044F \u041A\u0443\u0440\u043B\u043E\u0432"
     logs:
     - isImporntant: 1
@@ -5591,6 +5595,7 @@ MonoBehaviour:
     firstDirection: 0
     firstDirectionLength: 0.3
     secondDirection: 0
+    EventName: 
   - name: "\u0413\u043E\u0440\u044B \u0421\u043D\u043E\u0432\u044C\u044F"
     logs:
     - isImporntant: 0
@@ -5691,6 +5696,7 @@ MonoBehaviour:
     firstDirection: 0
     firstDirectionLength: 0.3
     secondDirection: 0
+    EventName: 
   - name: "\u0421\u043F\u0443\u0441\u043A \u0441 \u0433\u043E\u0440"
     logs:
     - isImporntant: 0
@@ -5761,6 +5767,7 @@ MonoBehaviour:
     firstDirection: 1
     firstDirectionLength: 0.605
     secondDirection: 1
+    EventName: 
   - name: "\u041E\u043A\u0440\u0430\u0438\u043D\u044B \u0421\u0443\u0440\u0438\u0446\u044B"
     logs:
     - isImporntant: 0
@@ -5849,6 +5856,7 @@ MonoBehaviour:
     firstDirection: 1
     firstDirectionLength: 0.5
     secondDirection: 1
+    EventName: 
   - name: "\u041A \u043E\u0437\u0435\u0440\u0443 \u0413\u0443\u0439\u044F"
     logs:
     - isImporntant: 0
@@ -5916,6 +5924,7 @@ MonoBehaviour:
     firstDirection: 2
     firstDirectionLength: 0.8
     secondDirection: 2
+    EventName: 
   - name: "\u041E\u043A\u0440\u0430\u0438\u043D\u044B \u0424\u0438\u043B\u043E\u043D\u0438\u0446\u044B"
     logs:
     - isImporntant: 0
@@ -6001,6 +6010,7 @@ MonoBehaviour:
     firstDirection: 2
     firstDirectionLength: 0.434
     secondDirection: 2
+    EventName: 
   _spacingLength: 0.2
   _dotPrefab: {fileID: 1632984216819298127, guid: cadb4fad2478563499e8c483132fec12, type: 3}
   _maxEnergy: 100
@@ -6058,6 +6068,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1455231527 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8252971959133719135, guid: f4a4b35ac4eb4ee41940c177eba9b103, type: 3}
+  m_PrefabInstance: {fileID: 1716319609}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1507484240
 GameObject:
   m_ObjectHideFlags: 0
@@ -8839,15 +8854,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5642376787806260387, guid: 128b7dc30d55f6144886692d6612778b, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5642376787806260387, guid: 128b7dc30d55f6144886692d6612778b, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5642376787806260387, guid: 128b7dc30d55f6144886692d6612778b, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 28.93
       objectReference: {fileID: 0}
     - target: {fileID: 5642376787806260387, guid: 128b7dc30d55f6144886692d6612778b, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -8855,7 +8870,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5642376787806260387, guid: 128b7dc30d55f6144886692d6612778b, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -44.465
       objectReference: {fileID: 0}
     - target: {fileID: 6504516604603652146, guid: 128b7dc30d55f6144886692d6612778b, type: 3}
       propertyPath: m_Name

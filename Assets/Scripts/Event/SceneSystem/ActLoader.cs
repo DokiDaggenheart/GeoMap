@@ -2,6 +2,8 @@ using System.IO;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using Zenject;
+
 namespace SceneSystem
 {
     public class ActLoader : MonoBehaviour
@@ -9,6 +11,9 @@ namespace SceneSystem
         public string actName;
         private ActData actData;
         private int currentSceneIndex;
+        [Inject] private MovementModel _movementModel;
+        [Inject] private InventorySystem _inventorySystem;
+        [Inject] private EnergyModel _energyModel;
 
         public Image backgroundImage;
         public Image character1Image;
@@ -27,7 +32,7 @@ namespace SceneSystem
             DisplayScene(currentSceneIndex);
         }
 
-        private void LoadAct(string name)
+        public void LoadAct(string name)
         {
             string path = "Assets/ActsData/" + name + ".json";
             if (File.Exists(path))
@@ -122,7 +127,7 @@ namespace SceneSystem
             if (sceneData.isEndScene)
             {
                 nextButton.onClick.RemoveAllListeners();
-                nextButton.onClick.AddListener(() => gameObject.SetActive(false));
+                nextButton.onClick.AddListener(() => EndEvent());
             }
         }
 
@@ -137,6 +142,15 @@ namespace SceneSystem
             {
                 Debug.LogError("—цена не найдена: " + sceneName);
             }
+        }
+
+        private void EndEvent()
+        {
+            gameObject.SetActive(false);
+            _movementModel.isRiding = true;
+            currentSceneIndex = 0;
+            _energyModel.energy += actData.addingEnergy;
+            _inventorySystem.food += actData.addingFood;
         }
 
         private void GoToNextScene()

@@ -33,6 +33,7 @@ public struct PathSection
     [Range(0.0f, 1.0f)]
     public float firstDirectionLength;
     public Direction secondDirection;
+    public string EventName;
 }
 
 [System.Serializable]

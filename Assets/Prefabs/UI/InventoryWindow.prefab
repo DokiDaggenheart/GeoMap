@@ -1218,6 +1218,7 @@ GameObject:
   - component: {fileID: 6019117804928361681}
   - component: {fileID: 5604410608540148745}
   - component: {fileID: 6589690756146852359}
+  - component: {fileID: 3240562821621263389}
   m_Layer: 5
   m_Name: InventoryWindow
   m_TagString: Untagged
@@ -1320,6 +1321,19 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 1
   m_TargetDisplay: 0
+--- !u!114 &3240562821621263389
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4599201040775926306}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62e5d7474a3bd304082e9d238f6434f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  foodText: {fileID: 2584899208731004809}
 --- !u!1 &5286283506718327631
 GameObject:
   m_ObjectHideFlags: 0

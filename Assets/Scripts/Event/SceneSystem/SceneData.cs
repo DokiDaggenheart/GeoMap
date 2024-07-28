@@ -30,6 +30,8 @@ namespace SceneSystem
         public Sprite backgroundImage;
         public string firstCharacterName;
         public string secondCharacterName;
+        public int addingEnergy;
+        public int addingFood;
         public List<SceneData> scenes = new List<SceneData>();
     }
 }

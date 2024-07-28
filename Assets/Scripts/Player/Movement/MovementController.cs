@@ -3,6 +3,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 using Zenject;
+using SceneSystem;
 
 public class MovementController : MonoBehaviour
 {
@@ -19,6 +20,7 @@ public class MovementController : MonoBehaviour
 
     [SerializeField] private GameObject RestButton;
     [SerializeField] private GameObject restPanel;
+    [SerializeField] private GameObject eventPanel;
 
 
     public AudioSource musicSource;
@@ -37,7 +39,6 @@ public class MovementController : MonoBehaviour
     private void Start()
     {
         _logSystem.SetLogList(_pathModel.pathList[pathSectionIndex]);
-        _movementModel.isRiding = true;
         ChangeMusic(0);
     }
     private void Update()
@@ -110,6 +111,9 @@ public class MovementController : MonoBehaviour
         if(_movementModel.progress >= 0.99)
         {
             Debug.Log("GoNext");
+            eventPanel.gameObject.SetActive(true);
+            if(_pathModel.pathList[pathSectionIndex].EventName != null)
+                eventPanel.GetComponent<ActLoader>().LoadAct(_pathModel.pathList[pathSectionIndex].EventName);
             pathSectionIndex += 1;
             animationSectionIndex += 1;
             _movementModel.progress = 0;

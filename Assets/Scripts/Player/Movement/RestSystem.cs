@@ -10,6 +10,7 @@ public class RestSystem : MonoBehaviour
     [Inject] private MovementModel _movementModel;
     [Inject] private EnergyModel _energyModel;
     [Inject] private TimeController _timeController;
+    [Inject] private InventorySystem _inventorySystem;
 
     [SerializeField] private Button foodButton;
     [SerializeField] private Button bedButton;
@@ -62,6 +63,10 @@ public class RestSystem : MonoBehaviour
     {
         waitingPanel.SetActive(true);
         startingPanel.SetActive(false);
+        if (foodUsed)
+            _inventorySystem.UseFood();
+        foodUsed = false;
+        bedUsed = false;
         int hoursToMinutes = 120;
         int minutes = 0;
         float energyPerSecond = Convert.ToSingle(addingEnergy) / Convert.ToSingle(hoursToMinutes);

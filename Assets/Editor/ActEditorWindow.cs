@@ -27,6 +27,8 @@ namespace SceneSystem
             EditorGUILayout.BeginHorizontal();
             actData.firstCharacterName = EditorGUILayout.TextField("First Character Name", actData.firstCharacterName);
             actData.secondCharacterName = EditorGUILayout.TextField("Second Character Name", actData.secondCharacterName);
+            actData.addingEnergy = EditorGUILayout.IntField("adding energy",actData.addingEnergy);
+            actData.addingFood = EditorGUILayout.IntField("assing food", actData.addingFood);
             EditorGUILayout.EndHorizontal();
             if (GUILayout.Button("Add Scene"))
             {
