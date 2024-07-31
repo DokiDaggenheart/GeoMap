@@ -64,7 +64,10 @@ public class RestSystem : MonoBehaviour
         waitingPanel.SetActive(true);
         startingPanel.SetActive(false);
         if (foodUsed)
+        {
             _inventorySystem.UseFood();
+            Debug.Log(_inventorySystem.food);
+        }
         foodUsed = false;
         bedUsed = false;
         int hoursToMinutes = 120;

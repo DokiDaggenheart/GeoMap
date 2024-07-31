@@ -111,9 +111,13 @@ public class MovementController : MonoBehaviour
         if(_movementModel.progress >= 0.99)
         {
             Debug.Log("GoNext");
-            eventPanel.gameObject.SetActive(true);
-            if(_pathModel.pathList[pathSectionIndex].EventName != null)
+            Debug.Log(_pathModel.pathList[pathSectionIndex].EventName);
+            if(_pathModel.pathList[pathSectionIndex].EventName != "no")
+            {
+                eventPanel.gameObject.SetActive(true);
                 eventPanel.GetComponent<ActLoader>().LoadAct(_pathModel.pathList[pathSectionIndex].EventName);
+                _movementModel.isRiding = false;
+            }
             pathSectionIndex += 1;
             animationSectionIndex += 1;
             _movementModel.progress = 0;

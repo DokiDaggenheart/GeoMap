@@ -13,7 +13,9 @@ public class InventoryUI : MonoBehaviour
     {
         try
         {
-            foodText.text = "x" + _inventorySystem.food.ToString();
+            foodText.text = "x" + _inventorySystem.food;
+            Debug.Log("food is updated");
+            Debug.Log(_inventorySystem.food);
         }
         catch
         {

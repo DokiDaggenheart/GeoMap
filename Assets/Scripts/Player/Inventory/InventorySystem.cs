@@ -5,7 +5,7 @@ using UnityEngine;
 public class InventorySystem
 {
     private bool bed;
-    public int food;
+    public int food = 3;
 
     public void UseBed()
     {

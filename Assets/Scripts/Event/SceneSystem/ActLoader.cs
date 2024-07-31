@@ -14,6 +14,7 @@ namespace SceneSystem
         [Inject] private MovementModel _movementModel;
         [Inject] private InventorySystem _inventorySystem;
         [Inject] private EnergyModel _energyModel;
+        [Inject] private UISystem _uiSystem;
 
         public Image backgroundImage;
         public Image character1Image;
@@ -29,11 +30,12 @@ namespace SceneSystem
         void Start()
         {
             LoadAct(actName);
-            DisplayScene(currentSceneIndex);
         }
 
         public void LoadAct(string name)
         {
+            _uiSystem.HideAllWindows();
+            _uiSystem.UnpressButtons();
             string path = "Assets/ActsData/" + name + ".json";
             if (File.Exists(path))
             {
@@ -44,6 +46,7 @@ namespace SceneSystem
             {
                 Debug.LogError("Файл акта не найден: " + path);
             }
+            DisplayScene(currentSceneIndex);
         }
 
         private void DisplayScene(int index)
