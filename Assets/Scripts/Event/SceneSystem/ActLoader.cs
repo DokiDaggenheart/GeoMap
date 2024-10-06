@@ -3,11 +3,14 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using Zenject;
+using System.Threading.Tasks;
 
 namespace SceneSystem
 {
     public class ActLoader : MonoBehaviour
     {
+        [SerializeField]
+        private string secondActName; 
         public string actName;
         private ActData actData;
         private int currentSceneIndex;
@@ -22,10 +25,11 @@ namespace SceneSystem
         public TextMeshProUGUI sceneText;
         public TextMeshProUGUI character1name;
         public TextMeshProUGUI character2name;
-        private int characterSpeaking;
         public Button choice1Button;
         public Button choice2Button;
         public Button nextButton;
+        private int characterSpeaking;
+        private static bool secondActLoaded = false;
 
         void Start()
         {
@@ -58,7 +62,7 @@ namespace SceneSystem
             sceneText.text = sceneData.text;
             backgroundImage.sprite = actData.backgroundImage;
 
-            if(sceneData.character1Image == null)
+            if (sceneData.character1Image == null)
                 character1Image.color = new Color(255, 255, 255, 0);
             else
             {
@@ -80,12 +84,10 @@ namespace SceneSystem
             else
                 character1name.text = " ";
 
-
             if (actData.secondCharacterName != "NO")
                 character2name.text = actData.secondCharacterName;
             else
                 character2name.text = " ";
-
 
             if (characterSpeaking == 0)
             {
@@ -149,9 +151,19 @@ namespace SceneSystem
 
         private void EndEvent()
         {
+            currentSceneIndex = 0;
+
+            if (!secondActLoaded)
+            {
+                Debug.Log("Загрузка второго акта");
+                LoadAct(secondActName); 
+                currentSceneIndex = 0;
+                DisplayScene(currentSceneIndex);
+                secondActLoaded = true; 
+                return;
+            }
             gameObject.SetActive(false);
             _movementModel.isRiding = true;
-            currentSceneIndex = 0;
             _energyModel.energy += actData.addingEnergy;
             _inventorySystem.food += actData.addingFood;
         }
