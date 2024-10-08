@@ -5595,7 +5595,7 @@ MonoBehaviour:
     firstDirection: 0
     firstDirectionLength: 0.3
     secondDirection: 0
-    EventName: 
+    EventName: no
   - name: "\u0413\u043E\u0440\u044B \u0421\u043D\u043E\u0432\u044C\u044F"
     logs:
     - isImporntant: 0
@@ -5696,7 +5696,7 @@ MonoBehaviour:
     firstDirection: 0
     firstDirectionLength: 0.3
     secondDirection: 0
-    EventName: 
+    EventName: Act3_Tent
   - name: "\u0421\u043F\u0443\u0441\u043A \u0441 \u0433\u043E\u0440"
     logs:
     - isImporntant: 0
@@ -5767,7 +5767,7 @@ MonoBehaviour:
     firstDirection: 1
     firstDirectionLength: 0.605
     secondDirection: 1
-    EventName: 
+    EventName: no
   - name: "\u041E\u043A\u0440\u0430\u0438\u043D\u044B \u0421\u0443\u0440\u0438\u0446\u044B"
     logs:
     - isImporntant: 0
@@ -5856,7 +5856,7 @@ MonoBehaviour:
     firstDirection: 1
     firstDirectionLength: 0.5
     secondDirection: 1
-    EventName: 
+    EventName: Act4_Temple
   - name: "\u041A \u043E\u0437\u0435\u0440\u0443 \u0413\u0443\u0439\u044F"
     logs:
     - isImporntant: 0
@@ -5924,7 +5924,7 @@ MonoBehaviour:
     firstDirection: 2
     firstDirectionLength: 0.8
     secondDirection: 2
-    EventName: 
+    EventName: no
   - name: "\u041E\u043A\u0440\u0430\u0438\u043D\u044B \u0424\u0438\u043B\u043E\u043D\u0438\u0446\u044B"
     logs:
     - isImporntant: 0
@@ -6010,7 +6010,7 @@ MonoBehaviour:
     firstDirection: 2
     firstDirectionLength: 0.434
     secondDirection: 2
-    EventName: 
+    EventName: Act5_Grandma_End
   _spacingLength: 0.2
   _dotPrefab: {fileID: 1632984216819298127, guid: cadb4fad2478563499e8c483132fec12, type: 3}
   _maxEnergy: 100
@@ -8870,7 +8870,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5642376787806260387, guid: 128b7dc30d55f6144886692d6612778b, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 248.115
       objectReference: {fileID: 0}
     - target: {fileID: 5642376787806260387, guid: 128b7dc30d55f6144886692d6612778b, type: 3}
       propertyPath: m_AnchoredPosition.y
